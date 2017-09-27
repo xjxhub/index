@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*µ¼º½*/
+.navbar{
+    padding:20px;
+    box-sizing: border-box;
+}
+.brand{
+    height:70px;
+}
+.navbar a{
+    font-size:16px;
+    line-height:72px;
+}
+.input-search{
+    width:100%;
+    height:48px;
+    border-bottom:1px solid #ddd;
+}
+.navbar-form .form-group .glyphicon-search{
+    position: absolute;
+    top:20px;
+    right:10px;
+}
+.navbar-default .navbar-right li p{
+    color:#fff;
+}
+.navbar-default .navbar-right > li > a:hover{
+    color:#f00;
+}
+.navbar-default .navbar-right li p{
+    padding-top:26px;
+    padding-bottom:15px;
+    font-size:16px;
+    line-height:20px;
+}

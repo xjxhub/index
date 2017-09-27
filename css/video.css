@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+}
+.videobox{
+    width:100%;
+    height:720px;
+    text-align: center;
+    background: #000;
+    position: relative;
+}
+.videobox video{
+    width:1280px;
+    height:720px;
+}
+.videobox .play{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background: rgba(255,255,255,0.7);
+    position: absolute;
+    right:360px;
+    bottom:50px;
+    display: none;
+}
+.videobox .play:hover{
+    cursor: pointer;
+}
+
+.videobox .play .glyphicon-play{
+    top:11px;
+    font-size: 24px;
+}

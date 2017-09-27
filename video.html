@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/video.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <iframe src="nav.html" width="100%" height="100%"
+                 marginheight="0" marginwidth="0" frameborder="no"></iframe>
+    </div>
+</header>
+<div class="videobox">
+    <video id="video1" controls >
+        <source src="video/pantene1.mp4"/>
+    </video>
+    <div class="play">
+    <span class="glyphicon glyphicon glyphicon-play" aria-hidden="true"></span>
+    </div>
+</div>
+
+<script>
+   var p=document.querySelector(".play");
+    video1.onpause=function(){
+        p.style.display="block";
+    };
+    video1.onplay=function(){
+        p.style.display="none";
+    };
+  var vb=document.querySelector(".videobox");
+  vb.onclick=function(){
+      if(video1.paused){
+          video1.play();
+      }
+      else{
+          video1.pause()
+      }
+  }
+</script>
+
+</body>
+</html>
