@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title></title>
     <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/test.js"></script>
 </head>
 <style>
     .data{
@@ -16,72 +18,14 @@
 </style>
 <body>
 
-<div class="data"></div>
+<div class="data">
+</div>
 
-<script>
-    var Questions = [
-        {
-            "num": 1,
-            "desc": "由于各种职业的职业责任和义务不同，从而形成各自特定的(　　)的具体规范。",
-            "options": ["A、制度规范", "B、法律法规", "C、职业道德", "D、行业标准"],
-            "answer": "C",
-            "type": "radio"
-        },
-        {
-            "num": 2,
-            "desc": "(　　)的基本职能是调节职能。",
-            "options": ["A、职业道德", "B、社会责任", "C、社会意识", "D、社会功德"],
-            "answer": "C",
-            "type": "radio"
-        },
-        {
-            "num": 3,
-            "desc": "(　　)是社会主义道德建设的核心。",
-            "options": ["A、为社会服务", "B、为行业服务", "C、为企业服务", "D、为人民服务"],
-            "answer": "C",
-            "type": "radio"
-        },
-        {
-            "num": 4,
-            "desc": "职业意识是指人们对职业岗位的(　　)、评价、情感和态度等心理成分的总和，其核心是爱岗敬业精神，在本职岗位上能够踏踏实实地做好工作。",
-            "options":["A、接受", "B、认同", "C、态度", "D、同情"],
-            "answer": "C",
-            "type": "radio"
-        },
-        {
-            "num": 5,
-            "desc": "全心全意为人民服务是社会主义职业道德的(　　)",
-            "options": ["A、前提", "B、关键", "C、核心", "D、基础"],
-            "answer": "C",
-            "type": "radio"
-        },
-        {
-            "num": 6,
-            "desc": "职业素质是劳动者对社会职业 了解与适应能力的一种综合体现,其主要表现在职业兴趣、(　　)、职业个性及职业情况等方面。",
-            "options":["A、消费者", "B、职业能力", "C、生产者", "D、个人"],
-            "answer": "C",
-            "type": "radio"
-        }
-    ];
+<div class="data1">
+    <button class="data2">aaaa</button>
+</div>
 
 
-var ht="";
-    for(var i=0;i<Questions.length;i++){
-        ht+=`<tr>`;
-        ht+=`<td>` + Questions[i].num + Questions[i].desc + `</td>`;
-        ht+=`</tr>`;
-        ht+=`<tr class="option">`;
-        for(var val=0;val<5;val++){
-        ht+=`<td>` +`<input type="radio" value="A" name="">`+ Questions[i].options[0]
-                   +`<input type="radio" value="B">` + Questions[i].options[1]
-                   +`<input type="radio" value="C">`+ Questions[i].options[2]
-                   +`<input type="radio" value="D">`+ Questions[i].options[3]
-         + `</td>`;
-        ht+=`</tr>`;
-    }
-    }
-    $(".data").html(ht);
 
-</script>
 </body>
 </html>
