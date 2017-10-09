@@ -13,10 +13,45 @@
 .brand{
     height:90px;
 }
-.navbar a{
-    font-size:16px;
+.nav .dropdown .dropdown-toggle a{
+    font-size:20px;
     line-height:72px;
+    margin:10px;
 }
+.nav .dropdown .dropdown-toggle a:hover{
+    color:#f00;
+    cursor: pointer;
+}
+.nav .dropdown .dropdown-menu .dr-a{
+    font-size:18px;
+    line-height:40px;
+}
+.nav .dropdown .dropdown-menu a{
+    position: relative;
+}
+.nav .dropdown .dropdown-menu .drop-right{
+    width:90%;
+    height:100%;
+    padding:5%;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top:0;
+    left:100%;
+    display: none;
+}
+.nav .dropdown .dropdown-menu .dr-a:hover div.drop-right{
+   display: block;
+}
+.nav .dropdown .dropdown-menu .drop-right li{
+   list-style: none;
+}
+.nav .dropdown .dropdown-menu .drop-right li a{
+    font-size:16px;
+    line-height:20px;
+    color:#262626;
+}
+
 .input-search{
     width:100%;
     height:48px;
@@ -70,8 +105,9 @@
     font-weight:200;
 }
 .item-a{
-    height:60px;
-    line-height:60px;
+    width:107%;
+    height:40px;
+    line-height:40px;
     font-size:12px;
     cursor:pointer;
     padding-left:12px;
@@ -109,7 +145,8 @@
     color:#fff;
 }
 #carousel-example-generic{
-    width:974px;
+    /*width:974px;*/
+    width:83%;
     height:384px;
     position: absolute;
     top:0;
@@ -133,18 +170,20 @@
 .container-fluid{
     width:1190px;
     margin:0 auto;
+    padding:0;
 }
 .container-fluid .row-1 h3{
     text-align: center;
     margin-left: -50px;
 }
 .row-2{
-    margin-left:7px;
+    margin-left:-12px;
 }
 .five-box{
     width:229px;
     height:260px;
     margin-top:5px;
+    margin-left: 14px;
     padding:0;
 }
 .mf{
@@ -215,7 +254,7 @@ div.mask-play:hover .mask{
     height:260px;
     margin-top:5px;
 }
-.bb-middle .row-a .ppv{
+.ppv{
     width:45px;
     height:20px;
     border-radius: 8px;
@@ -270,7 +309,7 @@ div.mask-play:hover .mask{
     font-size: 18px;
 }
 .pagination{
-    margin-left:68%;
+    margin-left:40%;
     margin-top:2%;
 }
 .bb-left{
