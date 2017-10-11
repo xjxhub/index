@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/middle.css" type="text/css" media="only screen and (max-width:991px) and (min-width:767px)"/>
     <link rel="stylesheet" href="css/small.css" type="text/css" media="only screen and (max-width:767px)"/>
-    <script src="js/test2.js"></script>
     <script src="js/jquery-1.11.3.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.min.js"></script>-->
+    <script src="js/video-data.js"></script>
+    <script src="js/videodata.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
     <title></title>
@@ -430,132 +433,140 @@
                 <div class="row row1">
                     <h3>实战推荐</h3>
                 </div>
-                <div class="row row2">
-                    <div class="col-md-4 col-sm-4 row-a">
-                        <a class="intro11" href="video.html" target="_blank">
-                            <div class="mask-play zz">
-                                <img src="imgs/低压蓄电池警示灯亮的检修da.jpg"/>
-                                <div class="mask">
-                                    <img class="play" src="imgs/play3.png">
-                                    <p class="ppv ppt">PPT</p>
-                                    <p class="ppv">Video</p>
-                                </div>
-                            </div>
-                            <div class="intro intro1">
-                                简介1
-                            </div>
-                            <p class="p">低压蓄电池警示灯亮的检修</p>
-                        </a>
-                        <p>课程性质</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 row-a">
-                        <a class="intro12" href="video.html">
-                            <div class="mask-play zz">
-                                <img src="imgs/前氧传感器故障检修da.jpg"/>
-                                <div class="mask">
-                                    <img class="play" src="imgs/play3.png">
-                                    <p class="ppv ppt">PPT</p>
-                                    <p class="ppv">Video</p>
-                                </div>
-                            </div>
-                            <div class="intro intro2">
-                                简介2
-                            </div>
-                            <p class="p">前氧传感器故障检修</p>
-                        </a>
-                        <p>课程性质</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 row-a">
-                        <a class="intro13" href="video.html">
-                            <div class="mask-play zz">
-                                <img src="imgs/更换汽车多媒体系统da.jpg"/>
-                                <div class="mask">
-                                    <img class="play" src="imgs/play3.png">
-                                    <p class="ppv ppt">PPT</p>
-                                    <p class="ppv">Video</p>
-                                </div>
-                            </div>
-                            <div class="intro intro3">
-                                简介3
-                            </div>
-                            <p class="p">更换汽车多媒体系统</p>
-                        </a>
-                        <p>课程性质</p>
-                    </div>
+                <div id="shizhan">
+                    <!--<div class="row row2">-->
+                    <!--<div class="col-md-4 col-sm-4 row-a">-->
+                    <!--<a class="intro11" href="video.html" target="_blank">-->
+                    <!--<div class="mask-play zz">-->
+                    <!--<img src="imgs/低压蓄电池警示灯亮的检修da.jpg"/>-->
+                    <!--<div class="mask">-->
+                    <!--<img class="play" src="imgs/play3.png">-->
+                    <!--<p class="ppv ppt">PPT</p>-->
+                    <!--<p class="ppv">Video</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="intro intro1">-->
+                    <!--简介1-->
+                    <!--</div>-->
+                    <!--<p class="p">低压蓄电池警示灯亮的检修</p>-->
+                    <!--</a>-->
+                    <!--<p>课程性质</p>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-sm-4 row-a">-->
+                    <!--<a class="intro12" href="video.html">-->
+                    <!--<div class="mask-play zz">-->
+                    <!--<img src="imgs/前氧传感器故障检修da.jpg"/>-->
+                    <!--<div class="mask">-->
+                    <!--<img class="play" src="imgs/play3.png">-->
+                    <!--<p class="ppv ppt">PPT</p>-->
+                    <!--<p class="ppv">Video</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="intro intro2">-->
+                    <!--简介2-->
+                    <!--</div>-->
+                    <!--<p class="p">前氧传感器故障检修</p>-->
+                    <!--</a>-->
+                    <!--<p>课程性质</p>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-sm-4 row-a">-->
+                    <!--<a class="intro13" href="video.html">-->
+                    <!--<div class="mask-play zz">-->
+                    <!--<img src="imgs/更换汽车多媒体系统da.jpg"/>-->
+                    <!--<div class="mask">-->
+                    <!--<img class="play" src="imgs/play3.png">-->
+                    <!--<p class="ppv ppt">PPT</p>-->
+                    <!--<p class="ppv">Video</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="intro intro3">-->
+                    <!--简介3-->
+                    <!--</div>-->
+                    <!--<p class="p">更换汽车多媒体系统</p>-->
+                    <!--</a>-->
+                    <!--<p>课程性质</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="row row3">-->
+                    <!--<h3></h3>-->
+                    <!--</div>-->
+                    <!--<div class="row row4">-->
+                    <!--<div class="col-md-4 col-sm-4 row-a">-->
+                    <!--<a class="intro14" href="#">-->
+                    <!--<div class="mask-play zz">-->
+                    <!--<img src="imgs/更换雨刮总成da.jpg"/>-->
+                    <!--<div class="mask">-->
+                    <!--<img class="play" src="imgs/play3.png">-->
+                    <!--<p class="ppv ppt">PPT</p>-->
+                    <!--<p class="ppv">Video</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="intro intro4">-->
+                    <!--简介4-->
+                    <!--</div>-->
+                    <!--<p class="p">更换雨刮总成</p>-->
+                    <!--</a>-->
+                    <!--<p>课程性质</p>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-sm-4 row-a">-->
+                    <!--<a class="intro15" href="#">-->
+                    <!--<div class="mask-play zz">-->
+                    <!--<img src="imgs/混合动力发动机故障灯常亮的检修da.jpg"/>-->
+                    <!--<div class="mask">-->
+                    <!--<img class="play" src="imgs/play3.png">-->
+                    <!--<p class="ppv ppt">PPT</p>-->
+                    <!--<p class="ppv">Video</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="intro intro5">-->
+                    <!--简介5-->
+                    <!--</div>-->
+                    <!--<p class="p">混合动力发动机故障灯常亮的检修</p>-->
+                    <!--</a>-->
+                    <!--<p>课程性质</p>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-sm-4 row-a">-->
+                    <!--<a class="intro16" href="#">-->
+                    <!--<div class="mask-play zz">-->
+                    <!--<img src="imgs/混合动力汽车安全指导手册da.jpg"/>-->
+                    <!--<div class="mask">-->
+                    <!--<img class="play" src="imgs/play3.png">-->
+                    <!--<p class="ppv ppt">PPT</p>-->
+                    <!--<p class="ppv">Video</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="intro intro6">-->
+                    <!--简介6-->
+                    <!--</div>-->
+                    <!--<p class="p">混合动力汽车安全指导手册</p>-->
+                    <!--</a>-->
+                    <!--<p>课程性质</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
                 </div>
-                <div class="row row3">
-                    <h3></h3>
+                <!--<ul class="pagination pagination-right">-->
+                <!--<li>-->
+                <!--<a href="#" aria-label="Previous">-->
+                <!--<span aria-hidden="true">&laquo;</span>-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--<li><a href="#">1</a></li>-->
+                <!--<li><a href="#">2</a></li>-->
+                <!--<li><a href="#">3</a></li>-->
+                <!--<li><a href="#">4</a></li>-->
+                <!--<li><a href="#">5</a></li>-->
+                <!--<li>-->
+                <!--<a href="#" aria-label="Next">-->
+                <!--<span aria-hidden="true">&raquo;</span>-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--</ul>-->
+                <div id="paging">
+                    <div class="prev">上一页</div>
+                    <ul class="list"></ul>
+                    <div class="next">下一页</div>
                 </div>
-                <div class="row row4">
-                    <div class="col-md-4 col-sm-4 row-a">
-                        <a class="intro14" href="#">
-                            <div class="mask-play zz">
-                                <img src="imgs/更换雨刮总成da.jpg"/>
-                                <div class="mask">
-                                    <img class="play" src="imgs/play3.png">
-                                    <p class="ppv ppt">PPT</p>
-                                    <p class="ppv">Video</p>
-                                </div>
-                            </div>
-                            <div class="intro intro4">
-                                简介4
-                            </div>
-                            <p class="p">更换雨刮总成</p>
-                        </a>
-                        <p>课程性质</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 row-a">
-                        <a class="intro15" href="#">
-                            <div class="mask-play zz">
-                                <img src="imgs/混合动力发动机故障灯常亮的检修da.jpg"/>
-                                <div class="mask">
-                                    <img class="play" src="imgs/play3.png">
-                                    <p class="ppv ppt">PPT</p>
-                                    <p class="ppv">Video</p>
-                                </div>
-                            </div>
-                            <div class="intro intro5">
-                                简介5
-                            </div>
-                            <p class="p">混合动力发动机故障灯常亮的检修</p>
-                        </a>
-                        <p>课程性质</p>
-                    </div>
-                    <div class="col-md-4 col-sm-4 row-a">
-                        <a class="intro16" href="#">
-                            <div class="mask-play zz">
-                                <img src="imgs/混合动力汽车安全指导手册da.jpg"/>
-                                <div class="mask">
-                                    <img class="play" src="imgs/play3.png">
-                                    <p class="ppv ppt">PPT</p>
-                                    <p class="ppv">Video</p>
-                                </div>
-                            </div>
-                            <div class="intro intro6">
-                                简介6
-                            </div>
-                            <p class="p">混合动力汽车安全指导手册</p>
-                        </a>
-                        <p>课程性质</p>
-                    </div>
-                </div>
-                <ul class="pagination pagination-right">
-                    <li>
-                        <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li>
-                        <a href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
+
             </div>
             <div class="col-md-2 bb-right hidden-xs hidden-sm">
                 <ul id="tab">
