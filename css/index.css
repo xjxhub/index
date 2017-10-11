@@ -2,6 +2,9 @@
     margin:0;
     padding:0;
 }
+ul li{
+    list-style: none;
+}
 /*导航*/
 .navbar{
     box-shadow:0 0 800px #e4393c;
@@ -120,6 +123,7 @@
     width:700px;
     height:444px;
     background:#fff;
+    padding:15px;
     position: absolute;
     top:0;
     left:216px;
@@ -129,12 +133,33 @@
 .item-a:hover .hiddenbox{
     display: block;
 }
+.hd-title a{
+    font-size: 18px;
+    color:#262626;
+    font-weight: bolder;
+}
+.lineheigth135{
+    line-height:135px;
+}
+.lineheigth85{
+    line-height:85px;
+}
+.lineheigth58{
+    line-height:58px;
+}
+.hd-desc-li{
+    display: inline-block;
+}
+.hd-desc-li a{
+    font-size: 14px;
+    color:#262626;
+    margin-left:20px;
+}
 .left-menu .item-a a span{
     display: inline-block;
     width:145px;
     font-size:20px;
     color:#f00;
-
 }
 .left-menu .item-a a i{
     color:rgba(255,0,0,0.5);
@@ -142,7 +167,7 @@
     margin-left:10px;
 }
 .left-menu .item-a a:hover{
-    color:#fff;
+    color:#f00;
 }
 #carousel-example-generic{
     /*width:974px;*/
@@ -224,6 +249,7 @@ div.mask-play-right:hover .play-right{
 }
 div.mask-play{
     position: relative;
+    width:217px;
     height:121px;
     margin-left: -13px;
 }
@@ -303,7 +329,6 @@ div.mask-play:hover .mask{
     top:-102px;
     left:10px;
 }
-
 .bb-middle .row-a .p{
     margin-top:15px;
     font-size: 18px;
@@ -374,14 +399,12 @@ ul.tab li a{
     top: 40px;
     left: 0;
 }
-
 #tab li:first-child,#content1{
     background-color: #fff;
 }
 #tab li:first-child,#content2{
     background-color: #fff;
 }
-
 .row1 h3{
     text-align:center;
 }
