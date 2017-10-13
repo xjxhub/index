@@ -35,8 +35,8 @@ ul li{
 .nav .dropdown .dropdown-menu .drop-right{
     width:90%;
     height:100%;
-    padding:5%;
-    background: #fff;
+    padding-left:3%;
+    background: #ddd;
     border-radius: 5px;
     position: absolute;
     top:0;
@@ -48,6 +48,9 @@ ul li{
 }
 .nav .dropdown .dropdown-menu .drop-right li{
    list-style: none;
+}
+.nav .dropdown .dropdown-menu .drop-right li:hover{
+   background-color:#ccc; 
 }
 .nav .dropdown .dropdown-menu .drop-right li a{
     font-size:16px;
