@@ -1,11 +1,76 @@
 $(function(){
-//pptС��ť
-    var ppt=document.querySelector(".ppt");
+//ppt
+    var ppt=document.querySelector(".tppt1");
     ppt.onclick=function(e){
         e.preventDefault();
-        window.open("ppt.html");
+        window.open("ppt-html/ppt-电动车窗宽屏.html");
     };
-//����
+    var ppt=document.querySelector(".tppt2");
+    ppt.onclick=function(e){
+        e.preventDefault();
+        window.open("ppt-html/ppt-电动车窗宽屏.html");
+    };
+    var ppt=document.querySelector(".tppt3");
+    ppt.onclick=function(e){
+        e.preventDefault();
+        window.open("ppt-html/ppt-电动车窗宽屏.html");
+    };
+    var ppt=document.querySelector(".tppt4");
+    ppt.onclick=function(e){
+        e.preventDefault();
+        window.open("ppt-html/ppt-电动车窗宽屏.html");
+    };
+    var ppt=document.querySelector(".tppt5");
+    ppt.onclick=function(e){
+        e.preventDefault();
+        window.open("ppt-html/ppt-电动车窗宽屏.html");
+    };
+
+
+
+
+    var ppt=document.querySelector(".ppt0");
+    ppt.onclick=function(e){
+        e.preventDefault();
+        window.open("ppt-html/ppt.html");
+    };
+    var ppt=document.querySelector(".ppt1");
+    ppt.onclick=function(e){
+        e.preventDefault();
+        window.open("ppt-html/ppt-电动转向助力宽屏.html");
+    };
+    var ppt=document.querySelector(".ppt2");
+    ppt.onclick=function(e){
+        e.preventDefault();
+        window.open("ppt-html/ppt-汽车空调宽屏.html");
+    };
+    var ppt=document.querySelector(".ppt3");
+    ppt.onclick=function(e){
+        e.preventDefault();
+        window.open("ppt-html/ppt-燃油压力调整电磁阀宽屏.html");
+    };
+    var ppt=document.querySelector(".ppt4");
+    ppt.onclick=function(e){
+        e.preventDefault();
+        window.open("ppt-html/ppt-电动转向助力宽屏.html");
+    };
+    var ppt=document.querySelector(".ppt5");
+    ppt.onclick=function(e){
+        e.preventDefault();
+        window.open("ppt-html/ppt-汽车空调宽屏.html");
+    };
+    var ppt=document.querySelector(".ppt6");
+    ppt.onclick=function(e){
+        e.preventDefault();
+        window.open("ppt-html/ppt-燃油压力调整电磁阀宽屏.html");
+    };
+//弹出框
+
+// for(var i=0;i<videoData.length;i++){
+//     console.log(videoData.length);
+//     var 
+// }
+
     var i11=document.querySelector(".intro11");
     var i1=document.querySelector(".intro1");
     i11.onmouseover=function(){
@@ -59,7 +124,7 @@ $(function(){
     i16.onmouseout=function(){
         i6.style.display="none";
     };
-//��ǩ��ҳ
+//排行榜
     document.getElementById("container")
              .children[0]
              .style.zIndex=10;
