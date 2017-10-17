@@ -16,18 +16,28 @@ ul li{
 .brand{
     height:90px;
 }
-.nav .dropdown .dropdown-toggle a{
+.nav .dropdown .dropdown-toggle .title{
     font-size:20px;
     line-height:72px;
     margin:10px;
+    font-weight: bolder;
+    color:#000;
 }
 .nav .dropdown .dropdown-toggle a:hover{
     color:#f00;
     cursor: pointer;
 }
+#nav-js>li:hover .dropdown-menu{
+    display: block;
+}
 .nav .dropdown .dropdown-menu .dr-a{
     font-size:18px;
     line-height:40px;
+}
+.nav .dropdown .dropdown-menu .dr-a span{
+    display: inline-block;
+    width:108px;
+    font-weight: bolder;
 }
 .nav .dropdown .dropdown-menu a{
     position: relative;
@@ -112,12 +122,12 @@ ul li{
 }
 .item-a{
     width:107%;
-    height:40px;
-    line-height:40px;
+    height:80px;
+    line-height:80px;
     font-size:12px;
     cursor:pointer;
     padding-left:12px;
-    margin-bottom:40px;
+    margin-bottom:-10px;
 }
 .item-a:hover{
     background:#fff;
@@ -126,43 +136,46 @@ ul li{
     width:700px;
     height:444px;
     background:#fff;
-    padding:15px;
+    padding-left:20px;
     position: absolute;
     top:0;
     left:216px;
     display: none;
     z-index:9999;
+    cursor: auto;
 }
 .item-a:hover .hiddenbox{
     display: block;
 }
 .hd-title a{
-    font-size: 18px;
-    color:#262626;
-    font-weight: bolder;
-}
-.lineheigth135{
-    line-height:135px;
-}
-.lineheigth85{
-    line-height:85px;
-}
-.lineheigth58{
-    line-height:58px;
-}
-.hd-desc-li{
     display: inline-block;
-}
-.hd-desc-li a{
-    font-size: 14px;
     color:#262626;
-    margin-left:20px;
+    font-size: 15px;
+    height:0;
+}
+.hiddenbox .hd-desc-ul{
+    margin-top:-45px;
+    margin-bottom: -52px;
+}
+.hiddenbox .hd-desc{
+    display:inline-block;
+    margin-right:10px;
+    height:0;
+}
+.hiddenbox ul.noneli{
+    margin-bottom:-40px;
+}
+.hiddenbox .hd-desc a{
+    color:#262626;
+    font-size: 14px;
+    margin-top:10px;
 }
 .left-menu .item-a a span{
     display: inline-block;
     width:145px;
     font-size:20px;
     color:#f00;
+    font-weight: bold;
 }
 .left-menu .item-a a i{
     color:rgba(255,0,0,0.5);
