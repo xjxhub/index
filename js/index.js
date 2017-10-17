@@ -1,4 +1,8 @@
 $(function(){
+    $(document).ready(function(){
+        $(document).off('click.bs.dropdown.data-api');
+    });
+
 //ppt
     var ppt=document.querySelector(".tppt1");
     ppt.onclick=function(e){
@@ -130,7 +134,7 @@ $(function(){
              .style.zIndex=10;
     var as=document.querySelectorAll("#tab a");
     for(var i=0;i<as.length;i++){
-        as[i].onclick=function(){
+        as[i].onmousemove=function(){
             var divs=document.querySelectorAll("#container>div.content");
             for(var i=0;i<divs.length;i++) {
                 divs[i].style.zIndex="";
@@ -139,9 +143,7 @@ $(function(){
             var id=this.href.slice(i);
             console.log(id);
             document.querySelector(id)
-                .style.zIndex=10;
+                .style.zIndex=10;  
         }
     }
-
-
 });
