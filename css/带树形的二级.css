@@ -10,47 +10,23 @@ a{
 }
 .container{
     width:1190px;
-    margin:0 auto;
+    margin:-30px auto;
     display: flex;
 }
-
-
-/*
-li span{
-    font-size: 20px;
-    padding-left: 20px;
-    cursor: pointer;
-    background: url("../imgs/open.png") no-repeat center left;
-}
-li ul{
-    height:0;
-    overflow:hidden;
-    transition:all .3s linear;
-}
-.open{
-    background: url("../imgs/close.png") no-repeat center left;
-}
-.open+ul{
-    height:100px;
-}*/
-
-
-
 img{
-    border:0px;vertical-align:middle;
+    border:0;vertical-align:middle;
 }
-
 .clear{
     clear:both;
 }
 .ce{
     display:block;
-    width:200px;
+    width:100%;
     background:rgb(50,50,50);
     /*position:fixed;*/
     z-index:5;
-    top:0px;
-    left:0px;
+    top:0;
+    left:0;
 }
 .ce li{
     border-bottom: 1px solid rgb(40,40,40);
@@ -65,15 +41,19 @@ img{
     display:block;
     cursor:pointer;
 }
+.ce li a span{
+display: inline-block;
+    width:110px;
+}
 .er{
     display:none;
-    width:200px;
+    width:100%;
     background:rgb(100,100,100);
 }
 .er li{
     width:100%;
     border:solid rgb(140,140,140);
-    border-width:1px 0px 0px;
+    border-width:1px 0 0;
 }
 .er li a{
     display:block;
@@ -102,6 +82,11 @@ img{
 }
 .er .e_li .thr li a:hover{
     background:#f00;
+}
+.rightmain{
+    width:83%;
+    height:500px;
+    border:1px solid #000;
 }
 
 

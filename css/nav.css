@@ -42,6 +42,7 @@ ul li{
 }
 .nav .dropdown .dropdown-menu a{
     position: relative;
+    color:#000;
 }
 .nav .dropdown .dropdown-menu .drop-right{
     width:90%;
