@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/带树形的二级.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/index-data.js"></script>
+    <script src="js/indexdata.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script src="js/带树形的二级.js"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img class="brand" alt="Brand" src="imgs/zb_logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav" id="nav-js"></ul>
+
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="glyphicon glyphicon-search " aria-hidden="true"></span>
+                </div>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li><a href="#">下载APP</a></li>-->
+                <!--<li><a href="#">-->
+                <!--<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>-->
+                <!--购物车-->
+                <!--</a></li>-->
+                <li><a href="#">登录</a></li>
+                <li><p>/</p></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="left-tree">
+        <ul class="ce">
+            <li>
+                <a href="#"><span>汽车底盘</span> <img class="more" src="imgs/open.png"/></a>
+                <ul class="er">
+
+                    <li class="e_li">
+                        <a  href="#">传动<img class="more" src="imgs/open.png"/></a>
+                        <ul class="thr">
+                            <li> <a  href="#">离合器的工作原理</a> </li>
+                            <li> <a  href="#">离合器的拆装检修</a> </li>
+                            <li> <a  href="#">万向传动装置的构造原理</a> </li>
+                            <li> <a  href="#">万向传动装置的检修</a> </li>
+                            <li> <a  href="#">驱动桥的构造与工作原理</a> </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </li>
+                    <li class="e_li">
+                        <a  href="#">行驶<img class="more" src="imgs/open.png"/></a>
+                        <ul class="thr">
+                            <li> <a  href="#">了解轮胎的构造及规格</a> </li>
+                            <li> <a  href="#">轮胎的换位与更换及保养</a> </li>
+                            <li> <a  href="#">车架与车桥的功用和组成</a> </li>
+                            <li> <a  href="#">四轮定位</a> </li>
+                            <li> <a  href="#">悬架的工作原理及拆装检修</a> </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </li>
+                    <li class="e_li">
+                        <a  href="#">制动<img class="more" src="imgs/open.png"/></a>
+                        <ul class="thr">
+                            <li> <a  href="#">发动机电控系统的总体认识</a> </li>
+                            <li> <a  href="#">燃油供给系统检修</a> </li>
+                            <li> <a  href="#">燃油喷射系统检修</a> </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </li>
+                    <li class="e_li">
+                        <a  href="#">转向<img class="more" src="imgs/open.png"/></a>
+                        <ul class="thr">
+                            <li> <a  href="#">发动机电控系统的总体认识</a> </li>
+                            <li> <a  href="#">燃油供给系统检修</a> </li>
+                            <div class="clear"></div>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+    <div class="rightmain"></div>
+
+</div>
+
+</body>
+</html>
