@@ -41,6 +41,7 @@ ul li{
 }
 .nav .dropdown .dropdown-menu a{
     position: relative;
+    color:#000;
 }
 .nav .dropdown .dropdown-menu .drop-right{
     width:90%;
@@ -250,6 +251,11 @@ ul li{
     margin:0 auto;
     display: flex;
 }
+#shizhan{
+    width:100%;
+    height:510px;
+    margin-left:40px;
+}
 div.mask-play-right{
     position: relative;
 }
@@ -315,31 +321,11 @@ div.mask-play:hover .mask{
     padding:10px;
     display: none;
 }
-.intro1{
-    position: absolute;
-    top:-102px;
-    left:10px;
-}
-.intro2{
-    position: absolute;
-    top:-102px;
-    left:10px;
-}
-.intro3{
-    position: absolute;
-    top:-102px;
-    left:10px;
-}
-.intro4{
-    position: absolute;
-    top:-102px;
-    left:10px;
-}
-.intro5{
-    position: absolute;
-    top:-102px;
-    left:10px;
-}
+.intro1,
+.intro2,
+.intro3,
+.intro4,
+.intro5,
 .intro6{
     position: absolute;
     top:-102px;
@@ -399,6 +385,53 @@ div.mask-play:hover .mask{
     background: #a6a6a6;
     margin-right: 5px;
 }
+/*paging*/
+#paging {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+}
+#paging .first,
+#paging .last,
+#paging .prev,
+#paging .next,
+#paging .list li {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 4px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    cursor: default;
+    border-radius: 4px;
+    vertical-align: top;
+    cursor:pointer;
+    font-size:16px;
+
+}
+#paging .list {
+    display: inline-block;
+    vertical-align: top;
+}
+#paging .list li {
+    width: 40px;
+    padding: 0;
+    text-align: center;
+    cursor:pointer;
+}
+#paging .list li.cur {
+    color: #fff;
+    background-color: #f00;
+    border-color: #a00;
+    cursor: auto;
+}
+
+#paging .disable {
+    color: #bfbfbf;
+    cursor: not-allowed;
+}
+/*排行榜*/
 #tab{
     position: relative;
 }
@@ -427,14 +460,14 @@ ul.tab li a{
 
 /*footer*/
 #footer{
-    margin-top:20px;
+    margin-top:60px;
 }
 #footer,
 .wei{
     position: relative;
 }
 .footer-item{
-margin-left:115px;
+margin-left:365px;
 }
 .footer-item li{
     display:inline-block;
@@ -448,7 +481,7 @@ margin-left:115px;
 ul.footer-right{
     position: absolute;
     top:20px;
-    right:-1100px;
+    right:-920px;
     margin-bottom:30px;
 }
 ul.footer-right .img-circle{
