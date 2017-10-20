@@ -41,32 +41,25 @@ $(function () {
 var fn = {
 navMenu:function(){
     var navs = indexdata.navs;
-    // var thirds = navs.third;
     var navjs="";
-    // console.log(thirds[0]);
     for(var n = 0;n < navs.length;n++){
         navjs+=`<li>`;
         navjs+=`<div class="dropdown">`;
         navjs+=`<div class="dropdown-toggle" id="${indexdata.id[n]}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">`;
-        navjs+=`<a class="title" href="${navs[n].firsthref}" target="_blank">` + navs[n].first + `</a>`;
+        navjs+=`<a class="title" href="${navs[n].href}" target="_blank">` + navs[n].title + `</a>`;
         navjs+=`</div>`;
         if(n==0){
         navjs+=`<ul class="dropdown-menu" aria-labelledby="${indexdata.id[n]}">`;
-        for(var se=0,th=0;se<navs[n].second.length,th<navs[n].third.length;se++,th++){
+        for(var se=0;se<navs[n].children.length;se++){
             navjs+=`<li>`;
-            navjs+=`<div class="dr-a">` + `<span><a href="${navs[n].secondhref[se]}" target="_blank">` + navs[n].second[se] +`</a></span>`;
+            navjs+=`<div class="dr-a">` + `<span><a href="${navs[n].children[se].href}" target="_blank">` + navs[n].children[se].title +`</a></span>`;
             navjs+=`<i class="glyphicon glyphicon-chevron-right"></i>`;
             navjs+=`<div class="drop-right">`;
             navjs+=`<ul>`;
-            // console.log(navs[n].third.length);
-            var ths = "a"+th;
-                for(var key in navs[n].third[th]){
-                    for(var thi = 0 ;thi < navs[n].third[th][key].length; thi++){
-                        navjs+=`<li><a href="机械系统二级.html" target="_blank">`+navs[n].third[th][key][thi]+`</a></li>`;
+                    for(var th = 0 ;th < navs[n].children[se].children.length; th++){
+                        navjs+=`<li><a href="${navs[n].children[se].children[th].href}" target="_blank">`+navs[n].children[se].children[th].title+`</a></li>`;
+                        // console.log(navs[n].children[se].children[th].title);
                     }       
-                    break;
-                } 
-        
             navjs+=`</ul>`;
             navjs+=`</div>`;  
             navjs+=`</div>`;    
@@ -85,7 +78,6 @@ fn.navMenu();
 // 实战演练
 // paging
 var $oshizhan = $('#shizhan');
-//var videoData = indexdata.videoData;
  $('#paging').paging({
         nowPage: 1,
         allPages: Math.ceil(videoData.length / 6),
@@ -138,7 +130,6 @@ for (var i = 0; i < currentPages; i++) {
             }
         }
     });
-
 
      // 实战演练
     // var ppt=document.querySelector(".ppt0");
@@ -291,9 +282,6 @@ for (var i = 0; i < currentPages; i++) {
         this.$oNext = this.$oPaging.find('.next');
         this.$oList = this.$oPaging.find('.list');
         this.$aItem = this.$oList.find('li');
-        // this.$oGo = this.$oPaging.find('.go');
-        // this.$oGo_text = this.$oGo.find('input');
-        // this.$oGo_btn = this.$oGo.find('button');
 
         this.defaults = {
             nowPage: 1,
@@ -383,33 +371,21 @@ for (var i = 0; i < currentPages; i++) {
         initalPaging: function () {
             for (var i = 1; i <= this.displayPage; i ++) {
                 var $create_li = $('<li></li>');
-
                 $create_li.text(i).attr('index', '#' + i);
-
                 this.$oList.append($create_li);
             }
-
-            // if (this.allPages <= this.displayPage) {
                 this.$aItem.eq(this.nowPage - 1).addClass('cur');
-            // } else {
-                // this.$oGo.css({display: 'inline-block'});
-                // this.$oGo_text.attr('placeholder', 'Total: ' + this.allPages);
-            // }
-
             this.setPaging(this.nowPage);
             this.detectionPage(this.nowPage);
         },
 
         inital: function () {
             var self = this;
-
             this.initalPaging();
             this.opts.callBack && this.opts.callBack(this.iNum);
-
             this.$aItem.click(function () {
                 if (!$(this).hasClass('cur')) {
                     self.iNum = parseInt($(this).attr('index').substring(1));
-
                     self.clickFn();
                 }
             });
@@ -417,7 +393,6 @@ for (var i = 0; i < currentPages; i++) {
             this.$oFirst.click(function () {
               if (!$(this).hasClass('disable')) {
                 self.iNum = 1;
-
                 self.clickFn();
               }
             });
@@ -425,7 +400,6 @@ for (var i = 0; i < currentPages; i++) {
             this.$oLast.click(function () {
               if (!$(this).hasClass('disable')) {
                 self.iNum = self.allPages;
-
                 self.clickFn();
               }
             });
@@ -433,7 +407,6 @@ for (var i = 0; i < currentPages; i++) {
             this.$oPrev.click(function () {
                 if (!$(this).hasClass('disable')) {
                     self.iNum --;
-
                     self.clickFn();
                 }
             });
@@ -441,25 +414,9 @@ for (var i = 0; i < currentPages; i++) {
             this.$oNext.click(function () {
                 if (!$(this).hasClass('disable')) {
                     self.iNum ++;
-
                     self.clickFn();
                 }
             });
-
-            // this.$oGo_btn.click(function () {
-            //     var value = self.$oGo_text.val();
-            //     var reg = new RegExp(/^[0-9]*[1-9][0-9]*$/);
-
-            //     if (value !== '' && reg.test(value) && value <= self.allPages) {
-            //         self.iNum = parseInt(value);
-
-            //         self.clickFn();
-
-            //         self.$oGo_text.val('')
-            //     } else {
-            //         self.$oGo_text.val('')
-            //     }
-            // });
         },
 
         constructor: Paging
@@ -467,7 +424,6 @@ for (var i = 0; i < currentPages; i++) {
 
     $.fn.paging = function (options) {
         var paging = new Paging(this, options);
-
         return paging.inital();
     };
 
