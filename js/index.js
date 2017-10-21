@@ -72,7 +72,7 @@ navMenu:function(){
         $("#nav-js").html(navjs);
     }
 }
-}
+};
 fn.navMenu();
 
 // 实战演练
@@ -86,48 +86,51 @@ var $oshizhan = $('#shizhan');
             var currentPages = now * 6 < videoData.length ? 6 : videoData.length - (now - 1) * 6;
            $oshizhan.html('');
           
-for (var i = 0; i < currentPages; i++) {
-        var n = (now - 1) * 6 + i;
-        // for (var j = 0; j < videoData.length / 3 +1; j++) {
-        /*if(i % 6 == 0){                
-        	var _html0 = `<div class="row">`;
-        }else if(i % 6 == 3){
-        	var _html0 = _html;
-        }else{
-        	var _html0 = ``;
-        }*/
-        /*if(i % 3 == 0){
-        	 var _html_row = $(`<div class="row" class = "row"></div>`);
-        }*/
-        var _html_div =  $(`<div class="col-md-4 col-sm-4 row-a"></div>`);
-        var _html = `<a class="${videoData[n].numi}" href="${videoData[n].href}" target="_blank">`;
-            console.log(videoData[n].numi);
-            _html += `<div class="mask-play zz">`;
-            _html += `<img src="${videoData[n].images}">`;
-            _html += `<div class="mask">`;
-            _html += `<img class="play" src="imgs/play3.png">`;
-            _html += `<p class="ppv ${videoData[n].ppt}">` + "PPT" + `</p>`;
-            _html += `<p class="ppv">` + "Video" + `</p>`;
-            _html += `</div>`;
-            _html += `</div>`;
-            _html += `<div class="${videoData[n].num} intro">` + videoData[n].introduce + `</div>`;
-           console.log(videoData[n].num);
-            _html += `</a>`;
-            _html += `<p class="p"><a href="${videoData[n].titlehref}" target="_blank">` + videoData[n].title + `</a></p>`;
-         /*if(i % 3 == 2){ 
-               _html += `</div>`;
-         }*/
-         // $("#shizhan").html(_html);
-         // }
-        _html_div.html(_html).addClass('bounceIn ');
-        /*if(parseInt(i / 3) = 0){
-        	(".row").append(_html_div);
-        }
-        if(i % 3 == 2){
-        	$oshizhan.append(_html_row);
-        }*/
-         $oshizhan.append(_html_div);
+            for (var i = 0; i < currentPages; i++) {
+                var n = (now - 1) * 6 + i;
+                // for (var j = 0; j < videoData.length / 3 +1; j++) {
+                /*if(i % 6 == 0){
+                    var _html0 = `<div class="row">`;
+                }else if(i % 6 == 3){
+                    var _html0 = _html;
+                }else{
+                    var _html0 = ``;
+                }*/
+                /*if(i % 3 == 0){
+                     var _html_row = $(`<div class="row" class = "row"></div>`);
+                }*/
+                var _html_div =  $(`<div class="col-md-4 col-sm-4 row-a"></div>`);
+                var _html = `<a class="${videoData[n].numi}" href="${videoData[n].href}" target="_blank">`;
+                    console.log(videoData[n].numi);
+                    _html += `<div class="mask-play zz">`;
+                    _html += `<img src="${videoData[n].images}">`;
+                    _html += `<div class="mask">`;
+                    _html += `<img class="play" src="imgs/play3.png">`;
+                    _html += `<p class="ppv ${videoData[n].ppt}">` + "PPT" + `</p>`;
+                    _html += `<p class="ppv">` + "Video" + `</p>`;
+                    _html += `</div>`;
+                    _html += `</div>`;
+                    _html += `<div class="${videoData[n].num} intro">` + videoData[n].introduce + `</div>`;
+                   console.log(videoData[n].num);
+                    _html += `</a>`;
+                    _html += `<p class="p"><a href="${videoData[n].titlehref}" target="_blank">` + videoData[n].title + `</a></p>`;
+                 /*if(i % 3 == 2){
+                       _html += `</div>`;
+                 }*/
+                 // $("#shizhan").html(_html);
+                 // }
+                _html_div.html(_html).addClass('bounceIn ');
+                /*if(parseInt(i / 3) = 0){
+                    (".row").append(_html_div);
+                }
+                if(i % 3 == 2){
+                    $oshizhan.append(_html_row);
+                }*/
+                 $oshizhan.append(_html_div);
             }
+            $(".intro11").mouseover(function(){
+                $(".intro1").css("display","block");
+            });
         }
     });
 
