@@ -1,0 +1,23 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "teach system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xjxhub/index.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "jquery"
+  ],
+  "author": "Bianwangyang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xjxhub/index/issues"
+  },
+  "homepage": "https://github.com/xjxhub/index#readme"
+}
