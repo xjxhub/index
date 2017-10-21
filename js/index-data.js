@@ -126,7 +126,7 @@ var indexdata={
         href:"#"
     },
     {
-        title:"管理中心",
+        title:"设备中心",
         href:"#"
     }
 ]    
