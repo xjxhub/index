@@ -1,4 +1,4 @@
-$(function () { 
+$(function () {
     //  ppt劲爆课程
     $(".tppt1").click(function(e){
          e.preventDefault();
@@ -34,9 +34,6 @@ $(function () {
 //     });
 // }
 
-
-
-
 // 菜单内容
 var fn = {
 navMenu:function(){
@@ -48,11 +45,12 @@ navMenu:function(){
         navjs+=`<div class="dropdown-toggle" id="${indexdata.id[n]}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">`;
         navjs+=`<a class="title" href="${navs[n].href}" target="_blank">` + navs[n].title + `</a>`;
         navjs+=`</div>`;
-        if(n==0){
+        if(n!==2){
         navjs+=`<ul class="dropdown-menu" aria-labelledby="${indexdata.id[n]}">`;
         for(var se=0;se<navs[n].children.length;se++){
             navjs+=`<li>`;
             navjs+=`<div class="dr-a">` + `<span><a href="${navs[n].children[se].href}" target="_blank">` + navs[n].children[se].title +`</a></span>`;
+            if(n==0){
             navjs+=`<i class="glyphicon glyphicon-chevron-right"></i>`;
             navjs+=`<div class="drop-right">`;
             navjs+=`<ul>`;
@@ -61,7 +59,8 @@ navMenu:function(){
                         // console.log(navs[n].children[se].children[th].title);
                     }       
             navjs+=`</ul>`;
-            navjs+=`</div>`;  
+            navjs+=`</div>`;
+            }
             navjs+=`</div>`;    
             navjs+=`</li>`;
         }

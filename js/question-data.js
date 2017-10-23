@@ -1,4 +1,6 @@
-var Questions = [
+var Questions = {
+    "title":["检测"],
+    "question":[
     {
         "num": 1,
         "desc": ".各种职业的职业责任和义务不同，从而形成各自特定的(　　)的具体规范。",
@@ -139,4 +141,5 @@ var Questions = [
         "answer": "D",
         "type": "radio"
     }
-];
+]
+};
