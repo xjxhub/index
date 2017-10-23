@@ -118,16 +118,50 @@ var indexdata={
         ]
     },
     {
+        title:"实训中心",
+        href:"#",
+        children: [
+                    {
+                        title: "设备",
+                        href: "#"
+                    },
+                    {
+                        title: "教室",
+                        href: "#"
+                    }
+                ]
+    },
+    {
         title:"考试中心",
         href:"test-center.html"
     },
     {
         title:"评价中心",
-        href:"#"
+        href:"#",
+        children: [
+                    {
+                        title: "课程评价",
+                        href: "#"
+                    },
+                    {
+                        title: "教室评价",
+                        href: "#"
+                    },
+                    {
+                        title: "设备评价",
+                        href: "#"
+                    }
+                ]
     },
     {
-        title:"设备中心",
-        href:"#"
+        title:"资源共享中心",
+        href:"#",
+        children: [
+                    {
+                        title: "资源上传",
+                        href: "#"
+                    }
+                ]
     }
 ]    
 };
