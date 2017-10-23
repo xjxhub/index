@@ -8,20 +8,18 @@ ul li{
 /*导航*/
 .navbar{
     margin-bottom:30px;
-    padding:20px;
+    padding:15px;
     box-sizing: border-box;
-    height:131px;
+    height:105px;
 }
 .brand{
-    height:90px;
+    height:75px;
 }
 .nav .dropdown .dropdown-toggle .title{
     font-size:20px;
     line-height:72px;
     margin:10px;
     font-weight: bolder;
-}
-.nav .dropdown .dropdown-toggle a{
     color:#fff;
 }
 .nav .dropdown .dropdown-toggle a:hover{

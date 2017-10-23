@@ -8,13 +8,13 @@ ul li{
 /*导航*/
 .navbar{
     box-shadow:0 0 800px #e4393c;
-    margin-bottom:30px;
-    padding:20px;
+    margin-bottom:-40px;
+    padding:15px;
     box-sizing: border-box;
-    height:131px;
+    height:105px;
 }
 .brand{
-    height:90px;
+    height:75px;
 }
 .nav .dropdown .dropdown-toggle .title{
     font-size:20px;
@@ -107,7 +107,7 @@ ul li{
     height:444px;
     margin:80px auto;
     position: relative;
-    margin-bottom:15px;
+    margin-bottom:-30px;
 }
 .left-menu{
     width:216px;
@@ -223,7 +223,7 @@ ul li{
 }
 .five-box{
     width:229px;
-    height:260px;
+    height:200px;
     margin-top:5px;
     margin-left: 14px;
     padding:0;
@@ -344,7 +344,8 @@ div.mask-play:hover .mask{
     box-shadow: 10px 10px 30px #ccc;
     margin-top:20px;
 }
-.bb-a,.bb-span{
+.bb-a,
+.bb-span{
     color:#222;
     font-size: 18px;
     float: left;
@@ -362,6 +363,9 @@ div.mask-play:hover .mask{
 .bb-left .p{
     margin-top:15px;
     font-size: 16px;
+}
+.bb-left-case{
+    margin-bottom: 45px;
 }
 .bb-right{
     height: 630px;
