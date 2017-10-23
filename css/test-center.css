@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul li{
+    list-style: none;
+}
+hr {
+    margin-top: -5px;
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 2px solid #f00;
+}
+p{
+    font-size: 16px;
+    font-weight:bolder;
+}
+/*main*/
+.container{
+    width:1190px;
+}
+.topbox{
+    width:100%;
+}
+.middlebox{
+    display: flex;
+    margin-top:40px;
+}
+.information{
+    width:585px;
+    height:145px;
+    /*border:1px solid #000;*/
+    margin-right:22px;
+    background-color:#ddd; 
+}
+.information ul li{
+   margin-bottom:5px;
+   margin-left: 20px;
+}
+.information ul li p{
+    font-size:15px;
+    color:#f00;
+}
+.ph-week{
+    width:280px;
+    height:145px;
+    /*border:1px solid #000;*/
+    margin-right:23px;
+    background-color:#ddd; 
+}
+.ph-week p,
+.ph-month p{
+    text-align: center;
+}
+.ph-week ul li,
+.ph-month ul li{
+    margin-left:20px;
+    margin-bottom:5px;
+
+}
+.ph-month{
+    width:280px;
+    height:145px;
+    /*border:1px solid #000;*/
+    background-color:#ddd; 
+}
+.bottombox{
+    width:100%;
+    margin-top:40px;
+    /*border:1px solid #000;*/
+}
+.hot-test{
+    width:100%;
+    /*border:1px solid #000;*/
+    margin-bottom:30px;
+}
+.bottombox .test{
+    margin-left:15px; 
+}
+.bottombox .test .test-li{
+    display: inline-block;
+    width:217px;
+    height:165px;
+    /*border:1px solid #000;*/
+    margin-right:14px; 
+    margin-bottom:20px;
+    text-align: center;
+}
+.bottombox .test .test-li .btn{
+    margin-top:10px; 
+}
+.all-test{
+    width:100%;
+    /*border:1px solid #000;*/
+}
