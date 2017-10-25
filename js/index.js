@@ -80,7 +80,7 @@ var $oshizhan = $('#shizhan');
  $('#paging').paging({
         nowPage: 1,
         allPages: Math.ceil(videoData.length / 6),
-        displayPage: 7,
+        displayPage: 3,
         callBack: function (now) {
             var currentPages = now * 6 < videoData.length ? 6 : videoData.length - (now - 1) * 6;
            $oshizhan.html('');
@@ -130,6 +130,72 @@ var $oshizhan = $('#shizhan');
             $(".intro11").mouseover(function(){
                 $(".intro1").css("display","block");
             });
+            $(".intro11").mouseout(function(){
+                $(".intro1").css("display","none");
+            });
+            $(".intro12").mouseover(function(){
+                $(".intro2").css("display","block");
+            });
+            $(".intro12").mouseout(function(){
+                $(".intro2").css("display","none");
+            });
+
+            $(".intro13").mouseover(function(){
+                $(".intro3").css("display","block");
+            });
+            $(".intro13").mouseout(function(){
+                $(".intro3").css("display","none");
+            });
+
+            $(".intro14").mouseover(function(){
+                $(".intro4").css("display","block");
+            });
+            $(".intro14").mouseout(function(){
+                $(".intro4").css("display","none");
+            });
+
+            $(".intro15").mouseover(function(){
+                $(".intro5").css("display","block");
+            });
+            $(".intro15").mouseout(function(){
+                $(".intro5").css("display","none");
+            });
+
+            $(".intro16").mouseover(function(){
+                $(".intro6").css("display","block");
+            });
+            $(".intro16").mouseout(function(){
+                $(".intro6").css("display","none");
+            });
+
+            $(".intro15").mouseover(function(){
+                $(".intro5").css("display","block");
+            });
+            $(".intro15").mouseout(function(){
+                $(".intro5").css("display","none");
+            });
+
+            $(".intro16").mouseover(function(){
+                $(".intro6").css("display","block");
+            });
+            $(".intro16").mouseout(function(){
+                $(".intro6").css("display","none");
+            });
+
+            $(".intro17").mouseover(function(){
+                $(".intro7").css("display","block");
+            });
+            $(".intro17").mouseout(function(){
+                $(".intro7").css("display","none");
+            });
+
+            $(".intro18").mouseover(function(){
+                $(".intro8").css("display","block");
+            });
+            $(".intro18").mouseout(function(){
+                $(".intro8").css("display","none");
+            });
+
         }
     });
 
@@ -190,68 +256,7 @@ var $oshizhan = $('#shizhan');
         $(".intro1").css("display","none");
     });
 
-    $(".intro12").mouseover(function(){
-        $(".intro2").css("display","block");
-    });
-        $(".intro12").mouseout(function(){
-        $(".intro2").css("display","none");
-    });
-
-    $(".intro13").mouseover(function(){
-        $(".intro3").css("display","block");
-    });
-        $(".intro13").mouseout(function(){
-        $(".intro3").css("display","none");
-    });
-
-    $(".intro14").mouseover(function(){
-        $(".intro4").css("display","block");
-    });
-        $(".intro14").mouseout(function(){
-        $(".intro4").css("display","none");
-    });
-
-    $(".intro15").mouseover(function(){
-        $(".intro5").css("display","block");
-    });
-        $(".intro15").mouseout(function(){
-        $(".intro5").css("display","none");
-    });
-
-    $(".intro16").mouseover(function(){
-        $(".intro6").css("display","block");
-    });
-        $(".intro16").mouseout(function(){
-        $(".intro6").css("display","none");
-    });
-
-    $(".intro15").mouseover(function(){
-        $(".intro5").css("display","block");
-    });
-        $(".intro15").mouseout(function(){
-        $(".intro5").css("display","none");
-    });
-
-    $(".intro16").mouseover(function(){
-        $(".intro6").css("display","block");
-    });
-        $(".intro16").mouseout(function(){
-        $(".intro6").css("display","none");
-    });
-
-    $(".intro17").mouseover(function(){
-        $(".intro7").css("display","block");
-    });
-        $(".intro17").mouseout(function(){
-        $(".intro7").css("display","none");
-    });
-
-    $(".intro18").mouseover(function(){
-        $(".intro8").css("display","block");
-    });
-        $(".intro18").mouseout(function(){
-        $(".intro8").css("display","none");
-    });
+    
 
     //排行榜
     document.getElementById("container")
