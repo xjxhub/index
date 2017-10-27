@@ -1,40 +1,40 @@
 $(function(){
     //显示题目
 var que = {
-listQuestions:function(){
+listQuestions:function(e){
     var title="";
-    title += `<p class="title">`+ Questions.title[0] +`</p>`;
+    title += `<p class="title">`+ e.title[0] +`</p>`;
     $(".title").html(title);
         var ht = "";
-        for (var i = 0; i < Questions.question.length; i++) {
+        for (var i = 0; i < e.question.length; i++) {
         ht += `<tr class="desc">`;
-        ht += `<td>` + `<a class="num">` + Questions.question[i].num + `</a>`
-        + Questions.question[i].desc
+        ht += `<td>` + `<a class="num">` + e.question[i].num + `</a>`
+        + e.question[i].desc
         + `</td>`;
         ht += `</tr>`;
-        ht += `<tr data-num="${Questions.question[i].num}">`;
+        ht += `<tr data-num="${e.question[i].num}">`;
         ht += `<td>` + `<label for="${i}">`
-        + `<input id="${i}" type="${Questions.question[i].type}" value="A" name="${i}">` + Questions.question[i].options[0]
+        + `<input id="${i}" type="${e.question[i].type}" value="A" name="${i}">` + e.question[i].options[0]
         + `</label>`
-        + `<label for="${i + Questions.question.length}">`
-        + `<input id="${i + Questions.question.length}" type="${Questions.question[i].type}" value="B" name="${i}">` + Questions.question[i].options[1]
+        + `<label for="${i + e.question.length}">`
+        + `<input id="${i + e.question.length}" type="${e.question[i].type}" value="B" name="${i}">` + e.question[i].options[1]
         + `</label>`
-        + `<label for="${i + Questions.question.length * 2}">`
-        + `<input id="${i + Questions.question.length * 2}" type="${Questions.question[i].type}" value="C" name="${i}">` + Questions.question[i].options[2]
+        + `<label for="${i + e.question.length * 2}">`
+        + `<input id="${i + e.question.length * 2}" type="${e.question[i].type}" value="C" name="${i}">` + e.question[i].options[2]
         + `</label>`
-        + `<label for="${i + Questions.question.length * 3}">`
-        + `<input id="${i + Questions.question.length * 3}" type="${Questions.question[i].type}" value="D" name="${i}">` + Questions.question[i].options[3]
+        + `<label for="${i + e.question.length * 3}">`
+        + `<input id="${i + e.question.length * 3}" type="${e.question[i].type}" value="D" name="${i}">` + e.question[i].options[3]
         + `</label>`
         + `</td>`;
         ht += `</tr>`;
         ht += `<tr>`;
-        ht += `<td>` + `<p class="ans">` + "正确答案：" + Questions.question[i].answer + `</p>` + `</td>`;
+        ht += `<td>` + `<p class="ans">` + "正确答案：" + e.question[i].answer + `</p>` + `</td>`;
         ht += `</tr>`;
         }
     $(".data").html(ht);
     }
 };
-que.listQuestions();
+que.listQuestions(Questions);
     
     //判断正误
     $(".data2").click(function () {

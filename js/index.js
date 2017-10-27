@@ -2,12 +2,12 @@ $(function () {
     //  ppt劲爆课程
     $(".tppt1").click(function(e){
          e.preventDefault();
-        window.open("ppt-html/ppt-汽车空调宽屏.html");
+        window.open("ppt-html/ppt-电动车窗宽屏.html");
     });
 
     $(".tppt2").click(function(e){
          e.preventDefault();
-        window.open("ppt-html/ppt-汽车空调宽屏.html");
+        window.open("ppt-html/ppt-电动转向助力宽屏.html");
     });
 
     $(".tppt3").click(function(e){
@@ -17,12 +17,12 @@ $(function () {
 
     $(".tppt4").click(function(e){
          e.preventDefault();
-        window.open("ppt-html/ppt-汽车空调宽屏.html");
+        window.open("ppt-html/ppt-燃油压力调整电磁阀宽屏.html");
     });
 
     $(".tppt5").click(function(e){
          e.preventDefault();
-        window.open("ppt-html/ppt-汽车空调宽屏.html");
+        window.open("ppt-html/ppt-电动车窗宽屏.html");
     });
 
 // for(var a = 1; a <= 5; a++){
@@ -80,7 +80,7 @@ var $oshizhan = $('#shizhan');
  $('#paging').paging({
         nowPage: 1,
         allPages: Math.ceil(videoData.length / 6),
-        displayPage: 3,
+        displayPage: 5,
         callBack: function (now) {
             var currentPages = now * 6 < videoData.length ? 6 : videoData.length - (now - 1) * 6;
            $oshizhan.html('');
@@ -99,18 +99,16 @@ var $oshizhan = $('#shizhan');
                      var _html_row = $(`<div class="row" class = "row"></div>`);
                 }*/
                 var _html_div =  $(`<div class="col-md-4 col-sm-4 row-a"></div>`);
-                var _html = `<a class="${videoData[n].numi}" href="${videoData[n].href}" target="_blank">`;
-                    console.log(videoData[n].numi);
-                    _html += `<div class="mask-play zz">`;
+                var _html = `<a href="${videoData[n].href}" target="_blank">`;
+                    _html += `<div class="mask-play">`;
                     _html += `<img src="${videoData[n].images}">`;
                     _html += `<div class="mask">`;
                     _html += `<img class="play" src="imgs/play3.png">`;
                     _html += `<p class="ppv ${videoData[n].ppt}">` + "PPT" + `</p>`;
                     _html += `<p class="ppv">` + "Video" + `</p>`;
                     _html += `</div>`;
+                     _html += `<div class="intro">` + videoData[n].introduce + `</div>`;
                     _html += `</div>`;
-                    _html += `<div class="${videoData[n].num} intro">` + videoData[n].introduce + `</div>`;
-                   console.log(videoData[n].num);
                     _html += `</a>`;
                     _html += `<p class="p"><a href="${videoData[n].titlehref}" target="_blank">` + videoData[n].title + `</a></p>`;
                  /*if(i % 3 == 2){
@@ -126,80 +124,12 @@ var $oshizhan = $('#shizhan');
                     $oshizhan.append(_html_row);
                 }*/
                  $oshizhan.append(_html_div);
+
+                 var allPages="";
+                 allPages += `<div class="allPages">` + "共" + Math.ceil(videoData.length / 6) + "页" + `</div>`
+                 $(".allPages").html(allPages);
             }
-            $(".intro11").mouseover(function(){
-                $(".intro1").css("display","block");
-            });
-            $(".intro11").mouseout(function(){
-                $(".intro1").css("display","none");
-            });
-            $(".intro12").mouseover(function(){
-                $(".intro2").css("display","block");
-            });
-            $(".intro12").mouseout(function(){
-                $(".intro2").css("display","none");
-            });
-
-            $(".intro13").mouseover(function(){
-                $(".intro3").css("display","block");
-            });
-            $(".intro13").mouseout(function(){
-                $(".intro3").css("display","none");
-            });
-
-            $(".intro14").mouseover(function(){
-                $(".intro4").css("display","block");
-            });
-            $(".intro14").mouseout(function(){
-                $(".intro4").css("display","none");
-            });
-
-            $(".intro15").mouseover(function(){
-                $(".intro5").css("display","block");
-            });
-            $(".intro15").mouseout(function(){
-                $(".intro5").css("display","none");
-            });
-
-            $(".intro16").mouseover(function(){
-                $(".intro6").css("display","block");
-            });
-            $(".intro16").mouseout(function(){
-                $(".intro6").css("display","none");
-            });
-
-            $(".intro15").mouseover(function(){
-                $(".intro5").css("display","block");
-            });
-            $(".intro15").mouseout(function(){
-                $(".intro5").css("display","none");
-            });
-
-            $(".intro16").mouseover(function(){
-                $(".intro6").css("display","block");
-            });
-            $(".intro16").mouseout(function(){
-                $(".intro6").css("display","none");
-            });
-
-            $(".intro17").mouseover(function(){
-                $(".intro7").css("display","block");
-            });
-            $(".intro17").mouseout(function(){
-                $(".intro7").css("display","none");
-            });
-
-            $(".intro18").mouseover(function(){
-                $(".intro8").css("display","block");
-            });
-            $(".intro18").mouseout(function(){
-                $(".intro8").css("display","none");
-            });
-
-        }
-    });
-
-     // 实战演练
+            // 实战演练
     // var ppt=document.querySelector(".ppt0");
     // ppt.onclick=function(e){
     //     e.preventDefault();
@@ -208,7 +138,7 @@ var $oshizhan = $('#shizhan');
 
     $(".ppt0").click(function(e){
          e.preventDefault();
-        window.open("ppt-html/ppt-汽车空调宽屏.html");
+        window.open("ppt-html/ppt-电动车窗宽屏.html");
     });
     $(".ppt1").click(function(e){
          e.preventDefault();
@@ -216,11 +146,11 @@ var $oshizhan = $('#shizhan');
     });
     $(".ppt2").click(function(e){
          e.preventDefault();
-        window.open("ppt-html/ppt-汽车空调宽屏.html");
+        window.open("ppt-html/ppt-电动转向助力宽屏.html");
     });
     $(".ppt3").click(function(e){
          e.preventDefault();
-        window.open("ppt-html/ppt-汽车空调宽屏.html");
+        window.open("ppt-html/ppt-燃油压力调整电磁阀宽屏.html");
     });
     $(".ppt4").click(function(e){
          e.preventDefault();
@@ -228,8 +158,14 @@ var $oshizhan = $('#shizhan');
     });
     $(".ppt5").click(function(e){
          e.preventDefault();
-        window.open("ppt-html/ppt-汽车空调宽屏.html");
+        window.open("ppt-html/ppt-电动车窗宽屏.html");
     });
+
+
+        }
+    });
+
+     
     
 
 //弹出框
