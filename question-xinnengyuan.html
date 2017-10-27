@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/question-data.js"></script>
+    <script src="js/question-xinnengyuan.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index-data.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<style>
+    td{
+        line-height: 35px;
+        font-weight: bolder;
+    }
+    label{
+        font-weight: normal;
+        margin-right:20px;
+        cursor: pointer; 
+    }
+    .time-item{
+        width:100%;
+        height:50px;
+        position: fixed;
+        text-align:right;
+        margin-top:-25px;
+    }
+    .time-item .time{
+        font-size:16px;
+        margin-right:15px;
+    }
+    .time-item .name{
+         font-size:16px;
+         float: left;
+         margin-left:15px;
+     }
+    .title{
+        text-align:center;
+        font-weight: bolder;
+        font-size:20px;
+    }
+    .data{
+        width:970px;
+        /*border:1px solid #000;*/
+        margin:0 auto;
+        padding:20px;
+        box-shadow:0 0 15px #e4393c;
+    }
+    .data1{
+        width:970px;
+        margin:0 auto;
+        padding:20px;
+        text-align: center;
+    }
+    .result{
+        width:800px;
+        height:100px;
+        margin:0 auto;
+    }
+    .ans{
+        display: none;
+    }
+    .container {
+        margin: 20px auto;
+    }
+    .row {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        position: relative;
+    }
+    .row:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+    .content {
+        float: left;
+        width: 100%;
+    }
+    .aside {
+        float: right;
+        width: 100%;
+        margin-left:-21%;
+    }
+    .stickit {
+        margin-left: -21%;
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+    }
+</style>
+<body>
+<header>
+    <!--<iframe src="nav.html" width="100%"  frameborder="0"></iframe>-->
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">
+                <img class="brand" alt="Brand" src="imgs/zb_logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav" id="nav-js"></ul>
+
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="glyphicon glyphicon-search " aria-hidden="true"></span>
+                </div>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li><a href="question.html">下载APP</a></li>-->
+                <!--<li><a href="question.html">-->
+                <!--<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>-->
+                <!--购物车-->
+                <!--</a></li>-->
+                <li><a href="question.html">登录</a></li>
+                <li><p>/</p></li>
+                <li><a href="question.html">注册</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="row stickem-container">
+        <div class="test content">
+    <div class="title"></div>
+    <div class="data">
+    </div>
+    <div class="data1">
+      <button class=" data2 btn btn-danger">提交</button>
+      <div class="result"></div>
+    </div>
+</div>
+        <div class="time-item aside stickem">
+             <b class="time">
+               距离考试结束还有：
+             <strong id="hour_show">0时</strong>
+             <strong id="minute_show">0分</strong>
+             <strong id="second_show">0秒</strong>
+             </b>
+             <b class="name">谢佳芯</b>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery.stickem.js"></script>
+<script>
+    var intDiff = parseInt(7200);//倒计时总秒数量
+    function timer(intDiff){
+        window.setInterval(function(){
+            var day=0,
+                    hour=0,
+                    minute=0,
+                    second=0;//时间默认值
+            if(intDiff > 0){
+                day = Math.floor(intDiff / (60 * 60 * 24));
+                hour = Math.floor(intDiff / (60 * 60)) - (day * 24);
+                minute = Math.floor(intDiff / 60) - (day * 24 * 60) - (hour * 60);
+                second = Math.floor(intDiff) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60);
+            }
+            if (minute <= 9) minute = '0' + minute;
+            if (second <= 9) second = '0' + second;
+            $('#day_show').html(day+"天");
+            $('#hour_show').html('<s id="h"></s>'+hour+'时');
+            $('#minute_show').html('<s></s>'+minute+'分');
+            $('#second_show').html('<s></s>'+second+'秒');
+            intDiff--;
+        }, 1000);
+    }
+    $(function(){
+        timer(intDiff);
+    });
+    $(document).ready(function() {
+        $('.container').stickem();
+    });
+</script>
+</html>
