@@ -52,6 +52,20 @@ ul li{
     height:500px;
     border:1px solid #000;
     margin:60px auto;
+    position: relative
+}
+.videobox .mask{
+    width:900px;
+    height:500px;
+    background: rgba(255, 255, 255, 0.7);
+    padding:150px;
+    position: absolute;
+    top:0;
+    right:-2px;
+    color:#000;
+    font-size: 20px;
+    text-align: center;
+    font-weight:bolder;
 }
 .passagebox{
     width:100%;

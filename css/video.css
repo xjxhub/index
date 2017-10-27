@@ -8,6 +8,7 @@
     text-align: center;
     background: #000;
     position: relative;
+    margin-top:-30px;
 }
 .videobox video{
     width:1280px;

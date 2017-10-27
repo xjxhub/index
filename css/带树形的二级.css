@@ -47,8 +47,8 @@ img{
     cursor:pointer;
 }
 .ce li a span{
-display: inline-block;
-    width:110px;
+    display: inline-block;
+    width:170px;
 }
 .er{
     display:none;
@@ -94,50 +94,47 @@ display: inline-block;
 }
 .rightmain p.top-title{
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bolder;
-    margin-left:20%;
     margin-top:-5px;
 }
-#main{
+/*#rm-main{
     width: 100%;
     position: absolute;
     top: 660px;
     bottom: 0;
     left: 0;
-}
-#main .nav-list{
-    margin-top:-485px;
+}*/
+#rm-main .nav-list{
+    margin-top:35px;
     padding-left:240px;
-    width:45%;
-    margin-left:32%;
+    width:100%;
+    margin-left:2%;
 }
-#main .nav-list li{
+
+#rm-main .nav-list li{
     margin-left:15px;
 }
-#main .nav-list li a{
+#rm-main .nav-list li a{
     color:#000;
     font-size:16px;
 }
-#main .nav-list li a:hover{
+#rm-main .nav-list li a:hover{
     color:#f00;
 }
-#main .nav-list > li.active > a{
+#rm-main .nav-list > li.active > a{
     color:#f00;
 }
 .videobox{
-    width:900px;
-    height:500px;
-    border:1px solid #000;
-    margin:60px auto;
-    margin-left:33%;
+   text-align: center;
+
 }
 .passagebox{
     width:100%;
     margin-top: 30px;
 }
 .passagebox div.pb-title{
-    width:80%;
+    width:90%;
     margin:0 auto;
     margin-top: 30px;
     border-bottom:1px solid #ddd;

@@ -8,9 +8,9 @@ ul li{
 /*导航*/
 .navbar{
     margin-bottom:30px;
-    padding:15px;
+    padding:20px;
     box-sizing: border-box;
-    height:105px;
+    height:114px;
 }
 .brand{
     height:75px;

@@ -9,9 +9,9 @@ ul li{
 .navbar{
     box-shadow:0 0 800px #e4393c;
     margin-bottom:-40px;
-    padding:15px;
+    padding:20px;
     box-sizing: border-box;
-    height:105px;
+    height:114px;
 }
 .brand{
     height:75px;
@@ -294,6 +294,9 @@ div.mask-play{
 div.mask-play:hover .mask{
     display: block;
 }
+div.mask-play:hover .intro{
+    display: block;
+}
 
 .bb-middle{
     margin-right:50px;
@@ -316,20 +319,16 @@ div.mask-play:hover .mask{
     width:200px;
     height:100px;
     border-radius: 30px;
-    background: rgba(100,100,100,0.6);
+    background: rgba(200,200,200,1);
     color:#fff;
-    padding:10px;
+    padding:12px;
     display: none;
-}
-.intro1,
-.intro2,
-.intro3,
-.intro4,
-.intro5,
-.intro6{
     position: absolute;
     top:-102px;
     left:10px;
+    overflow: hidden;
+    color:#000;
+    font-size:16px;
 }
 .bb-middle .row-a .p{
     margin-top:15px;
@@ -351,10 +350,10 @@ div.mask-play:hover .mask{
     float: left;
     height: 20px;
     line-height: 20px;
-    padding-left: 5px;
+    padding-left: 2px;
     border-left:4px solid #e4393c;
-    margin-left: -12px;
-    margin-right:18px;
+    margin-left: -17px;
+    margin-right:25px;
     margin-bottom:5px;
 }
 .bb-left img{
@@ -366,11 +365,13 @@ div.mask-play:hover .mask{
 }
 .bb-left-case{
     margin-bottom: 45px;
+    margin-top:25px;
 }
 .bb-right{
     height: 630px;
     box-shadow: 10px 10px 30px #ccc;
     margin-top:20px;
+    padding-right:0;
 }
 .bb-right .bb-item{
     margin-top:15px;
@@ -393,7 +394,7 @@ div.mask-play:hover .mask{
 #paging {
     overflow: hidden;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 24px;
     text-align: center;
 }
 #paging .first,
@@ -467,8 +468,9 @@ ul.tab li a{
     margin-top:60px;
     background-color:#eee;
     text-align: center;
+    padding-top:20px;
 }
 #footer .row1{
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
