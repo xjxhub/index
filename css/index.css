@@ -7,14 +7,14 @@ ul li{
 }
 /*导航*/
 .navbar{
-    box-shadow:0 0 800px #e4393c;
+    box-shadow:0 0 10px #000;
     margin-bottom:-40px;
     padding:20px;
     box-sizing: border-box;
-    height:114px;
+    height:100px;
 }
 .brand{
-    height:75px;
+    height:59px;
 }
 .nav .dropdown .dropdown-toggle .title{
     font-size:20px;
@@ -294,9 +294,6 @@ div.mask-play{
 div.mask-play:hover .mask{
     display: block;
 }
-div.mask-play:hover .intro{
-    display: block;
-}
 
 .bb-middle{
     margin-right:50px;
@@ -317,18 +314,26 @@ div.mask-play:hover .intro{
 }
 .intro{
     width:200px;
-    height:100px;
+    height:73px;
     border-radius: 30px;
     background: rgba(200,200,200,1);
     color:#fff;
-    padding:12px;
+    padding:10px;
     display: none;
     position: absolute;
-    top:-102px;
+    top:-73px;
     left:10px;
     overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
     color:#000;
-    font-size:16px;
+    font-size:14px;
+}
+div.mask-play:hover .intro{
+    display: -webkit-box;
+}
+.intro::after {
+    content: '...'
 }
 .bb-middle .row-a .p{
     margin-top:15px;
