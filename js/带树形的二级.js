@@ -64,6 +64,16 @@ rm += `</div>`;
 rm += `</div>`;
 $(".rightmain").html(rm);
 }
+//进入页面时默认展开一级菜单
+var $litarget = $(".ce > li");
+if($litarget&&$litarget.length===1) {
+    var $target = $litarget.find('>a');
+    if(!$target.find("span").hasClass("open")){
+        $target.find("span").addClass("open");
+        $target.siblings(".er").show(300);
+    }
+}
+
 
 // 点击树
 $(".ce > li > a").click(function(){
