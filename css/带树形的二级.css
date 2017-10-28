@@ -10,7 +10,7 @@ a{
 }
 .container{
     width:1190px;
-    margin:-30px auto;
+    margin:0 auto;
     display: flex;
 }
 img{
@@ -49,6 +49,7 @@ img{
 .ce li a span{
     display: inline-block;
     width:170px;
+    font-size:17px;
 }
 .er{
     display:none;
@@ -84,6 +85,10 @@ img{
 }
 .er .e_li .thr li a{
     background:none;
+    overflow:hidden;
+    width:100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .er .e_li .thr li a:hover{
     background:#f00;
@@ -96,7 +101,6 @@ img{
     text-align: center;
     font-size: 22px;
     font-weight: bolder;
-    margin-top:-5px;
 }
 /*#rm-main{
     width: 100%;
