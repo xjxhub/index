@@ -7,13 +7,13 @@ ul li{
 }
 /*导航*/
 .navbar{
-    margin-bottom:30px;
+    margin-bottom:40px;
     padding:20px;
     box-sizing: border-box;
-    height:114px;
+    height:100px;
 }
 .brand{
-    height:75px;
+    height:59px;
 }
 .nav .dropdown .dropdown-toggle .title{
     font-size:20px;
