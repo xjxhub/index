@@ -66,6 +66,37 @@
     .ans{
         display: none;
     }
+    .container {
+        margin: 20px auto;
+    }
+    .row {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        position: relative;
+    }
+    .row:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+    .content {
+        float: left;
+        width: 100%;
+    }
+    .aside {
+        float: right;
+        width: 100%;
+        margin-left:-21%;
+    }
+    .stickit {
+        margin-left: -21%;
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+    }
 </style>
 <body>
 <header>
@@ -106,16 +137,9 @@
     </nav>
 </header>
 
-<div class="time-item">
-    <b class="time">
-    距离考试结束还有：
-    <strong id="hour_show">0时</strong>
-    <strong id="minute_show">0分</strong>
-    <strong id="second_show">0秒</strong>
-    </b>
-    <b class="name">谢佳芯</b>
-</div>
-<div class="test">
+<div class="container">
+    <div class="row stickem-container">
+        <div class="test content">
     <div class="title"></div>
     <div class="data">
     </div>
@@ -124,8 +148,20 @@
       <div class="result"></div>
     </div>
 </div>
+        <div class="time-item aside stickem">
+             <b class="time">
+               距离考试结束还有：
+             <strong id="hour_show">0时</strong>
+             <strong id="minute_show">0分</strong>
+             <strong id="second_show">0秒</strong>
+             </b>
+        </div>
+    </div>
+</div>
+
 </body>
 <script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery.stickem.js"></script>
 <script>
     var intDiff = parseInt(7200);//倒计时总秒数量
     function timer(intDiff){
@@ -151,6 +187,9 @@
     }
     $(function(){
         timer(intDiff);
+    });
+    $(document).ready(function() {
+        $('.container').stickem();
     });
 </script>
 </html>

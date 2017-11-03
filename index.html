@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
+        <!--<link rel="stylesheet" href="css/main.css">-->
     <link rel="stylesheet" href="css/middle.css" type="text/css" media="only screen and (max-width:991px) and (min-width:767px)"/>
     <link rel="stylesheet" href="css/small.css" type="text/css" media="only screen and (max-width:767px)"/>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/index-data.js"></script>
     <script src="js/index.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/不带树形的二级.js"></script>-->
     <title></title>
 </head>
 <body>
@@ -171,7 +173,7 @@
                 <!--<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>-->
                 <!--购物车-->
             <!--</a></li>-->
-            <li><a href="#">登录</a></li>
+            <li><a href="#" class="login">登录</a></li>
             <li><p>/</p></li>
             <li><a href="#">注册</a></li>
         </ul>
@@ -183,6 +185,26 @@
     <div class="banner">
         <div class="left-menu">
             <div class="item-a">
+                <a href="新能源汽车.html" target="_blank">
+                    <span>新能源汽车</span>
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                </a>
+                <div class="hiddenbox">
+                    <b class="hd-title"><a href="纯电动汽车二级.html">纯电动汽车</a></b>
+                    <hr/>
+                    <ul class="hd-desc-ul">
+                        <li class="hd-desc"><a href="动力项目一.html" target="_blank">项目一 纯电动汽车安全操作与新车交接检查</a></li>
+                        <li class="hd-desc"><a href="动力项目二.html" target="_blank">项目二 纯电动汽车动力电池系统故障检修</a></li>
+                    </ul>
+                    <b class="hd-title"><a href="混合动力汽车二级.html">混合动力汽车</a></b>
+                    <hr/>
+                    <ul class="hd-desc-ul">
+                        <li class="hd-desc"><a href="混合项目一.html" target="_blank">项目一 混合动力汽车新车交接检查</a></li>
+                        <li class="hd-desc"><a href="混合项目二.html" target="_blank">项目二 混合动力汽车高压电池及管理系统故障检修</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item-a">
                 <a href="汽车发动机树形二级.html" target="_blank">
                     <span>汽车发动机</span>
                     <i class="glyphicon glyphicon-chevron-right"></i>
@@ -191,18 +213,18 @@
                     <b class="hd-title"><a href="机械系统二级.html" target="_blank">机械系统</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">认识发动机拆装检修工量具</a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">检查发动机配气机构</a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">装配发动机曲柄连杆机构</a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">装配发动机配气机构</a></li>
+                        <li class="hd-desc"><a onclick="urlHtml(0)">认识发动机总体</a></li>
+                        <li class="hd-desc"><a onclick="urlHtml(1)">认识发动机拆装检修工量具</a></li>
+                        <li class="hd-desc"><a onclick="urlHtml(2)">发动机附件拆装</a></li>
+                        <li class="hd-desc"><a onclick="urlHtml(3)">发动机配气机构拆装</a></li>
                     </ul>
                     <b class="hd-title"><a href="电控系统二级.html" target="_blank">电控系统</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">发动机电控系统的总体认识</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">认识发动机电控系统总体</a></li>
                         <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">燃油供给系统检修</a></li>
                         <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">燃油喷射系统检修</a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">控制系统的检修</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">怠速控制系统检修</a></li>
                     </ul>
                 </div>
             </div>
@@ -212,34 +234,34 @@
                     <i class="glyphicon glyphicon-chevron-right"></i>
                 </a>
                 <div class="hiddenbox">
-                    <b class="hd-title"><a href="传动二级.html" target="_blank">传动</a></b>
+                    <b class="hd-title"><a href="传动二级.html" target="_blank">传动系</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">离合器的工作原理</a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">离合器的拆装检修</a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">万向传动装置的构造原理</a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">万向传动装置的检修</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">自动变速器识别</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">自动变速器组成</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">自动变速器结构认知、挡位正确使用</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">自动变速器基本检查</a></li>
                     </ul>
-                    <b class="hd-title"><a href="行驶二级.html" target="_blank">行驶</a></b>
+                    <b class="hd-title"><a href="行驶二级.html" target="_blank">行驶系</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">了解轮胎的构造及规格</a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">轮胎的换位与更换及保养</a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">车架与车桥的功用和组成</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">轮胎构造及规格</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">轮胎换位及保养</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">车架与车桥功用和组成</a></li>
                         <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">四轮定位</a></li>
                     </ul>
-                    <b class="hd-title"><a href="制动二级.html" target="_blank">制动</a></b>
+                    <b class="hd-title"><a href="制动二级.html" target="_blank">制动系</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">制动系统的构造与原理</a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">浮钳盘式制动器的拆装 </a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">鼓式制动器的拆装及检修</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">制动系统构造与原理</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">浮钳盘式制动器拆装  </a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">鼓式制动器拆装及检修</a></li>
                     </ul>
-                    <b class="hd-title"><a href="转向二级.html" target="_blank">转向</a></b>
+                    <b class="hd-title"><a href="转向二级.html" target="_blank">转向系</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">转向系统的构造与原理</a></li>
-                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">齿轮齿条式、循环球式、蜗杆曲柄指销式转向器的拆装</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">转向系统构造与原理</a></li>
+                        <li class="hd-desc"><a href="不带树形的二级.html" target="_blank">齿轮齿条式、循环球式、蜗杆曲柄指销式转向器拆装</a></li>
                     </ul>
                 </div>
             </div>
@@ -249,60 +271,59 @@
                     <i class="glyphicon glyphicon-chevron-right"></i>
                 </a>
                 <div class="hiddenbox">
-                    <b class="hd-title"><a href="#">电源</a></b>
+                    <b class="hd-title"><a href="#">电源系统</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="#">蓄电池技术状况的检查与维修</a></li>
+                        <li class="hd-desc"><a href="#">蓄电池技术状况检修</a></li>
                         <li class="hd-desc"><a href="#">发电机拆装与电路检修</a></li>
                     </ul>
-                    <b class="hd-title"><a href="#">启动</a></b>
+                    <b class="hd-title"><a href="#">启动系统</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="#"> 起动机拆装及电路检修</a></li>
-                        <li class="hd-desc"><a href="#">点火系电路分析及点火系统的维修</a></li>
+                        <li class="hd-desc"><a href="#">起动机拆装及电路检修</a></li>
+                        <li class="hd-desc"><a href="#">点火系电路分析及点火系统检修</a></li>
                     </ul>
-                    <b class="hd-title"><a href="#">照明</a></b>
+                    <b class="hd-title"><a href="#">照明系统</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
                         <li class="hd-desc"><a href="#">照明系统装置的检修</a></li>
                     </ul>
-                    <b class="hd-title"><a href="#">辅助</a></b>
+                    <b class="hd-title"><a href="#">辅助电器系统</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="#">汽车总线路的检修 </a></li>
+                        <li class="hd-desc"><a href="#">汽车总线路检修  </a></li>
                         <li class="hd-desc"><a href="#">中央控制门锁故障检修</a></li>
+                        <li class="hd-desc"><a href="#">汽车防盗装置故障检修</a></li>
+                        <li class="hd-desc"><a href="#">雨刮故障检修与更换</a></li>
                     </ul>
-                    <b class="hd-title"><a href="#">仪表</a></b>
+                    <b class="hd-title"><a href="#">仪表系统</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
                         <li class="hd-desc"><a href="#">汽车仪表结构原理</a></li>
                         <li class="hd-desc"><a href="#">汽车仪常见故障与排除</a></li>
                     </ul>
-                    <b class="hd-title"><a href="#">空调</a></b>
+                    <b class="hd-title"><a href="#">空调系统</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="#">汽车空调认知</a></li>
-                        <li class="hd-desc"><a href="#">汽车空调冷媒的充注和回收</a></li>
-                        <li class="hd-desc"><a href="#">汽车空调系统的检漏</a></li>
-                        <li class="hd-desc"><a href="#">汽车空调的拆装</a></li>
+                        <li class="hd-desc"><a href="#">汽车空调结构</a></li>
+                        <li class="hd-desc"><a href="#">汽车空调冷媒充注及回收</a></li>
+                        <li class="hd-desc"><a href="#">汽车空调系统检漏</a></li>
+                        <li class="hd-desc"><a href="#">汽车空调拆装</a></li>
                     </ul>
                 </div>
             </div>
             <div class="item-a">
                 <a href="#" target="_blank">
-                    <span>汽车变速器</span>
+                    <span>汽车车身结构</span>
                     <i class="glyphicon glyphicon-chevron-right"></i>
                 </a>
                 <div class="hiddenbox">
-                    <b class="hd-title"><a href="#">自动变速器</a></b>
+                    <b class="hd-title"><a href="#">汽车车身结构</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="#">自动变速器组成</a></li>
-                        <li class="hd-desc"><a href="#">液力变矩器的常见故障及其原因</a></li>
-                        <li class="hd-desc"><a href="#">ATF油泵的结构及工作原理</a></li>
-                        <li class="hd-desc"><a href="#">油压试验</a></li>
+                        <li class="hd-desc"><a href="#">汽车车身结构</a></li>
                     </ul>
-                    <b class="hd-title"><a href="#">手动变速器</a></b>
+                    <!--<b class="hd-title"><a href="#">手动变速器</a></b>
                     <hr/>
                     <ul class="hd-desc-ul">
                         <li class="hd-desc"><a href="#">两轴式变速器</a></li>
@@ -321,31 +342,13 @@
                     <ul class="noneli"></ul>
                     <b class="hd-title"><a href="#">E-CVT变速器</a></b>
                     <hr/>
-                    <ul class="noneli"></ul>
+                    <ul class="noneli"></ul>-->
                 </div>
             </div>
-            <div class="item-a">
-                <a href="#" target="_blank">
-                    <span>新能源汽车</span>
-                    <i class="glyphicon glyphicon-chevron-right"></i>
-                </a>
-                <div class="hiddenbox">
-                    <b class="hd-title"><a href="#">纯电动汽车</a></b>
-                    <hr/>
-                    <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="#">北汽EV160</a></li>
-                        <li class="hd-desc"><a href="#">BYD E5</a></li>
-                    </ul>
-                    <b class="hd-title"><a href="#">混合动力汽车</a></b>
-                    <hr/>
-                    <ul class="hd-desc-ul">
-                        <li class="hd-desc"><a href="#">卡罗拉双擎</a></li>
-                    </ul>
-                </div>
-            </div>
+            
 
 </div>
-        <div class="rightbox">
+     <div class="rightbox">
      <div class="slider">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000" >
         <!-- 小圆点-->
@@ -394,19 +397,19 @@
             <span class="sr-only">Next</span>
         </a>
       </div>
-</div>
     </div>
+</div>
     </div>
 <!--middle-five-box    -->
     <div class="container-fluid">
        <div class="row row-1">
-        <h3>劲爆课程</h3>
+        <h3>精品课程</h3>
     </div>
        <div class="row row-2">
         <div class="col-md-2 col-sm-6 five-box">
-            <a href="video-html/video-拆装动力电池盖板.html" target="_blank">
+            <a href="video-拆装动力电池盖板.html" target="_blank">
                 <div class="mask-play zz mf">
-                    <img src="imgs/拆装动力电池盖板.png"/>
+                    <img src="imgs/混合动力汽车无法行驶故障检修.png"/>
                     <div class="mask">
                         <img class="play" src="imgs/play3.png">
                         <p class="ppv tppt1">PPT</p>
@@ -414,10 +417,10 @@
                     </div>
                 </div>
             </a>
-                <p class="p"><a href="不带树形的二级.html" target="_blank">拆装动力电池盖板</a></p>
+                <p class="p"><a onclick="urlHtml(0)" target="_blank">旋变传感器故障检测</a></p>
         </div>
         <div class="col-md-2 col-sm-7 five-box">
-            <a href="video-html/video-拆装动力电池盖板.html" target="_blank">
+            <a href="video-拆装动力电池盖板.html" target="_blank">
                 <div class="mask-play zz mf">
                     <img src="imgs/车载充电机更换.png"/>
                     <div class="mask">
@@ -427,12 +430,12 @@
                     </div>
                 </div>
             </a>
-                <p class="p"><a href="不带树形的二级.html" target="_blank">车载充电机更换</a></p>
+                <p class="p"><a onclick="urlHtml(1)" target="_blank">拆装动力电池盖板</a></p>
         </div>
         <div class="col-md-2 col-sm-4 five-box">
-            <a href="video-html/video-前氧传感器故障检测.html" target="_blank">
+            <a href="video-拆装动力电池盖板.html" target="_blank">
                 <div class="mask-play zz mf">
-                    <img src="imgs/车载充电机更换电机继电器故障检测.png"/>
+                    <img src="imgs/高压互锁线路检修.png"/>
                     <div class="mask">
                         <img class="play" src="imgs/play3.png">
                         <p class="ppv tppt3">PPT</p>
@@ -440,12 +443,12 @@
                     </div>
                 </div>
             </a>
-                <p class="p"><a href="不带树形的二级.html" target="_blank">车载充电机更换电机继电器故障检测</a></p>
+                <p class="p"><a onclick="urlHtml(2)" target="_blank">慢充电故障检测</a></p>
         </div>
         <div class="col-md-2 col-sm-4 five-box">
-            <a href="video-html/video-前氧传感器故障检测.html" target="_blank">
+            <a href="video-拆装动力电池盖板.html" target="_blank">
                 <div class="mask-play zz mf">
-                    <img src="imgs/电子旋钮换挡器拆装.png"/>
+                    <img src="imgs/混合动力冷却系统水温高的故障检修.png"/>
                     <div class="mask">
                         <img class="play" src="imgs/play3.png">
                         <p class="ppv tppt4">PPT</p>
@@ -453,10 +456,10 @@
                     </div>
                 </div>
             </a>
-            <p class="p"><a href="不带树形的二级.html" target="_blank">电子旋钮换挡器拆装</a></p>
+            <p class="p"><a onclick="urlHtml(3)" target="_blank">动力电池冷却滤清器保养</a></p>
         </div>
         <div class="col-md-2 col-sm-4 five-box">
-            <a href="video-html/video-前氧传感器故障检测.html" target="_blank">
+            <a href="video-拆装动力电池盖板.html" target="_blank">
                 <div class="mask-play zz mf">
                     <img src="imgs/电子旋钮换挡器故障检测.png"/>
                     <div class="mask">
@@ -466,7 +469,7 @@
                     </div>
                 </div>
             </a>
-            <p class="p"><a href="不带树形的二级.html" target="_blank">电子旋钮换挡器故障检测</a></p>
+            <p class="p"><a onclick="urlHtml(4)" target="_blank">丰田混合动力系统(系统运作)</a></p>
         </div>
     </div>
     </div>
@@ -477,31 +480,31 @@
             <span class="bb-span">猜你感兴趣</span>
 
             <div class="bb-left-case">  
-            <a href="video-html/video-前氧传感器故障检测.html" target="_blank">
+            <a href="video-拆装动力电池盖板.html" target="_blank">
                 <div class="mask-play-right">
                     <img src="imgs/混合动力发动机故障灯常亮的检修.jpg"/>
                     <img class="play-right" src="imgs/play3.png">
                 </div>
             </a>
-            <p class="p"><a href="不带树形的二级.html" target="_blank">混合动力发动机故障灯常亮的检修</a></p>
+            <p class="p"><a onclick="urlHtml(5)" target="_blank">丰田混合动力系统(能量管理技术)</a></p>
             </div>
             <div class="bb-left-case">
-            <a href="video-html/video-前氧传感器故障检测.html" target="_blank">
+            <a href="video-拆装动力电池盖板.html" target="_blank">
                 <div class="mask-play-right">
                     <img src="imgs/混合动力汽车安全指导手册.jpg"/>
                     <img class="play-right" src="imgs/play3.png">
                 </div>
             </a>
-            <p class="p"><a href="不带树形的二级.html" target="_blank">混合动力汽车安全指导手册</a></p>
+            <p class="p"><a onclick="urlHtml(6)" target="_blank">丰田混合动力系统(高级刹车系统)</a></p>
             </div>
             <div class="bb-left-case">
-            <a href="video-html/video-前氧传感器故障检测.html" target="_blank">
+            <a href="video-拆装动力电池盖板.html" target="_blank">
                 <div class="mask-play-right">
                     <img src="imgs/前氧传感器故障检修.jpg"/>
                     <img class="play-right" src="imgs/play3.png">
                 </div>
             </a>
-            <p class="p"><a href="不带树形的二级.html" target="_blank">前氧传感器故障检修</a></p>
+            <p class="p"><a onclick="urlHtml(7)" target="_blank">高压互锁线路检修</a></p>
             </div>
 
         </div>
@@ -656,35 +659,35 @@
                 <div id="content1" class="content">
                     <div class="bb-item">
                         <span class="num top3">1</span>
-                        <a href="#">装配发动机曲柄连杆机构</a>
+                        <a onclick="urlHtml(8)">高压绝缘系统测试</a>
                     </div>
                     <div class="bb-item">
                         <span class="num top3">2</span>
-                        <a href="#">发动机电控系统的总体认识</a>
+                        <a onclick="urlHtml(9)">高压控制盒检修</a>
                     </div>
                     <div class="bb-item">
                         <span class="num top3">3</span>
-                        <a href="#">常见车型典型点火控制检修</a>
+                        <a onclick="urlHtml(10)">更换动力电池继电器模块</a>
                     </div>
                     <div class="bb-item">
                         <span class="num">4</span>
-                        <a href="#">离合器的工作原理</a>
+                        <a onclick="urlHtml(11)">更换动力电池BMS</a>
                     </div>
                     <div class="bb-item">
                         <span class="num">5</span>
-                        <a href="#">驱动桥的构造与工作原理</a>
+                        <a onclick="urlHtml(12)">混合动力发动机故障灯常亮的检修</a>
                     </div>
                     <div class="bb-item">
                         <span class="num">6</span>
-                        <a href="#">车架与车桥的功用和组成</a>
+                        <a onclick="urlHtml(13)">混合动力冷却系统水温高的故障检修</a>
                     </div>
                     <div class="bb-item">
                         <span class="num">7</span>
-                        <a href="#">燃油供给系统检修</a>
+                        <a onclick="urlHtml(14)">混合动力汽车安全指导手册</a>
                     </div>
                     <div class="bb-item">
                         <span class="num">8</span>
-                        <a href="#">发动机电控系统的总体认识</a>
+                        <a onclick="urlHtml(15)">混合动力汽车充电警告灯点亮的故障检修</a>
                     </div>
                     <!--<div class="bb-item">
                         <span class="num">9</span>
@@ -737,7 +740,8 @@
                         <span class="num">10</span>
                         <b>朱鸿飞</b>
                     </div>
-
+                
+                    
                 </div>
             </div>
         </div>
@@ -772,6 +776,11 @@
         </p>
 </div>
 
-
+<!--<script type="text/javascript">
+         function urlHtml(num){
+             var toUrl = "不带树形的二级.html?"+num;   
+             window.open(toUrl);         
+        }
+</script>-->
 </body>
 </html>
