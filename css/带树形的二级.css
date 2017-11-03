@@ -10,7 +10,7 @@ a{
 }
 .container{
     width:1190px;
-    margin:0 auto;
+    margin:60px auto;
     display: flex;
 }
 img{
@@ -26,22 +26,24 @@ img{
 .left-tree span.open{
     background: url("../imgs/minus.png") no-repeat center left;
 }
+
+
 .ce{
     display:block;
-    width:100%;
-    background:rgb(50,50,50);
+    width:195px;
+    background:rgb(20,20,20);
     /*position:fixed;*/
     z-index:5;
     top:0;
     left:0;
 }
 .ce li{
-    border-bottom: 1px solid rgb(40,40,40);
-    border-top: 1px solid rgb(90,90,90);
+    border-bottom: 1px solid rgb(30,30,30);
+    border-top: 1px solid rgb(60,60,60);
 }
 
 .ce li a{
-    padding: 20px;
+    padding: 20px 20px 20px 15px;
     color:white;
     display:block;
     cursor:pointer;
@@ -49,24 +51,30 @@ img{
 .ce li a span{
     display: inline-block;
     width:170px;
+    font-size:15px;
+}
+.ce li a .ce-title{
     font-size:17px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .er{
     display:none;
     width:100%;
-    background:rgb(100,100,100);
+    background:rgb(70,70,70);
 }
 .er li{
     width:100%;
-    border:solid rgb(140,140,140);
+    border:solid rgb(110,110,110);
     border-width:1px 0 0;
 }
 .er li a{
     display:block;
-    padding:10px 10px 10px 20px;
+    padding:10px 10px 10px 25px;
     color:white;
     background:none;
-    font-size: 15px;
+    font-size: 16px;
 }
 .er li a:hover{
     background:#f00;
@@ -75,12 +83,12 @@ img{
     background:#f00;
 }
 .thr{
-    background:rgb(150,150,150);
+    background:rgb(120,120,120);
     display:none;
 }
 .thr li{
     margin-bottom:1px;
-    border-top: 1px solid rgb(180,180,180);
+    border-top: 1px solid rgb(150,150,150);
     position:relative;
 }
 .er .e_li .thr li a{
@@ -93,6 +101,28 @@ img{
 .er .e_li .thr li a:hover{
     background:#f00;
 }
+.thr li a{
+    display:block;
+    padding:10px 10px 10px 35px;
+    overflow:hidden;
+    background:none;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.for{
+     background:rgb(180,180,180);
+     display:none;
+}
+.for li a{
+    display:block;
+    padding:10px 10px 10px 35px;
+    overflow:hidden;
+    background:none;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .rightmain{
     width:83%;
     height:500px;
@@ -101,6 +131,7 @@ img{
     text-align: center;
     font-size: 22px;
     font-weight: bolder;
+    margin-bottom:50px;
 }
 /*#rm-main{
     width: 100%;
@@ -126,9 +157,9 @@ img{
 #rm-main .nav-list li a:hover{
     color:#f00;
 }
-#rm-main .nav-list > li.active > a{
+/*#rm-main .nav-list > li.active > a{
     color:#f00;
-}
+}*/
 .videobox{
    text-align: center;
 
@@ -154,7 +185,9 @@ img{
     margin-top: 30px;
     border:1px solid #000;
 }
-
+.bbb{
+    margin-left:150px;
+}
 
 
 

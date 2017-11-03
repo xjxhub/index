@@ -5,6 +5,187 @@
 ul li{
     list-style: none;
 }
+a {
+    color: inherit;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+a:focus {
+    color: #f00;
+    text-decoration: none;
+}
+/*覆盖的bootstrap源文件*/
+.glyphicon {
+    top: 2px;
+}
+.carousel-inner > .item > a > img {
+    height: 384px;
+}
+hr {
+    margin-top: -25px;
+}
+.container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*@media (min-width: 768px) {
+    .container {
+        width: 310px;
+    }
+}*/
+.row {
+    margin-right: -30px;
+}
+.form-control{
+    margin-top:10px;
+}
+.form-group {
+    position: relative;
+}
+@media (min-width: 768px) {
+    .form-horizontal .form-group-lg .control-label {
+        padding-top: 14.333333px;
+    }
+}
+.dropdown-menu {
+    top: 70%;
+}
+.dropdown-menu > li > a,
+.dropdown-menu > li > .dr-a
+{
+    padding-right:0;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > .dr-a:hover,
+.dropdown-menu > li > .dr-a:focus
+{
+    background-color: #ddd;
+    cursor: pointer;
+}
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+    border-top-left-radius: 0;
+}
+.btn-group-vertical > .btn:last-child:not(:first-child) {
+    border-bottom-right-radius: 0;
+}
+.input-group .form-control:focus {
+    z-index: 0;
+}
+.nav {
+    padding-left: 30px;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #f00;
+}
+.navbar {
+    position: relative;
+    min-height: 100px;
+    margin-bottom: 0;
+    border: 0 solid transparent;
+    padding-left:15px;
+    padding-right:15px;
+}
+@media (min-width: 768px) {
+    .navbar {
+        border-radius: 0;
+    }
+}
+.navbar-collapse {
+    margin-top: 10px;
+    border-top: 0 solid transparent;
+}
+.navbar-brand {
+    padding:0;
+}
+.navbar-nav > li > a {
+    padding-top: 15px;
+}
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 26px;
+        font-size:16px;
+    }
+}
+.navbar-form {
+    border-top: 0 solid transparent;
+    border-bottom: 0 solid transparent;
+}
+.navbar-form .form-control {
+    width: 100%;
+}
+.navbar-default .navbar-nav > li > a {
+    font-size: 20px;
+}
+.container-fluid .jumbotron {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 6px;
+}
+.list-group-item {
+    border: 1px solid #000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.panel-body {
+    padding: 0;
+}
+.modal-header {
+    min-height: 16.42857143px;
+}
+.carousel-control {
+    color: #f00;
+    background-color: transparent;
+}
+.carousel-indicators {
+    z-index: 1;
+}
+.carousel-indicators li {
+    border: 1px solid #f00;
+}
+.carousel-indicators .active {
+    background-color: #2b333b;
+}
+@media screen and (min-width: 768px) {
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next {
+        margin-top: -15px;
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        margin-left: -15px;
+    }
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        margin-right: -15px;
+    }
+}
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .0) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .0)));
+  background-image:         linear-gradient(to right, rgba(0, 0, 0, .0) 0%, rgba(0, 0, 0, 0) 100%);
+}
 /*导航*/
 .navbar{
     box-shadow:0 0 10px #000;
@@ -33,6 +214,7 @@ ul li{
 .nav .dropdown .dropdown-menu .dr-a{
     font-size:18px;
     line-height:40px;
+    padding-left:15px;
 }
 .nav .dropdown .dropdown-menu .dr-a span{
     display: inline-block;
@@ -53,6 +235,7 @@ ul li{
     top:0;
     left:100%;
     display: none;
+    overflow: auto;
 }
 .nav .dropdown .dropdown-menu .dr-a:hover div.drop-right{
    display: block;
@@ -103,7 +286,7 @@ ul li{
 
 /*}*/
 .banner{
-    width:62%;
+    width:1190px;
     height:444px;
     margin:80px auto;
     position: relative;
@@ -135,7 +318,7 @@ ul li{
 }
 .hiddenbox{
     width:700px;
-    height:444px;
+    height:384px;
     background:#fff;
     padding-left:20px;
     position: absolute;
@@ -219,7 +402,7 @@ ul li{
     margin-left: -50px;
 }
 .row-2{
-    margin-left:-12px;
+    margin-left:-18px;
 }
 .five-box{
     width:229px;
@@ -329,6 +512,9 @@ div.mask-play:hover .mask{
     color:#000;
     font-size:14px;
 }
+.jianjie{
+    font-weight: bolder;
+}
 div.mask-play:hover .intro{
     display: -webkit-box;
 }
@@ -359,7 +545,10 @@ div.mask-play:hover .intro{
     border-left:4px solid #e4393c;
     margin-left: -17px;
     margin-right:25px;
-    margin-bottom:5px;
+    margin-bottom:11px;
+}
+.bb-a:hover{
+    background-color: #ccc;
 }
 .bb-left img{
     margin-top:10px;
@@ -379,7 +568,7 @@ div.mask-play:hover .intro{
     padding-right:0;
 }
 .bb-right .bb-item{
-    margin-top:15px;
+    margin-top:-2px;
     margin-bottom: 40px;
 }
 .bb-right .bb-item .top3{

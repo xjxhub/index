@@ -18,12 +18,12 @@ ul li{
     color:#000;
     font-size:30px;
     font-weight: bolder;
-    margin-top:80px;
+    margin-top:60px;
 }
 #main{
     width: 100%;
     position: absolute;
-    top: 660px;
+    top: 610px;
     bottom: 0;
     left: 0;
 }
