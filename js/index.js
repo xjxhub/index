@@ -1,4 +1,59 @@
 $(function () {
+
+//点击登录
+    $(".login").click(function () {
+        if ($('.login').html() == '登录'){
+            $(".loginBox").fadeIn("slow");
+        }else {
+            alert('您已经登录');
+        }
+
+
+    });
+    //点击登录按钮
+    $('.loginButton').click(function () {
+        var  user = $('#userText').val();
+        var passWord = $('#passWordText').val();
+        if (user =='' || passWord == ''){
+            alert('用户名或密码为空');
+        }else {
+            if (user != "admin"){
+                alert('请输入正确的用户名');
+            }else  if (passWord != '666666'){
+                alert('请输入正确的密码');
+            }else if(user == 'admin' && passWord == '666666'){
+                $('.login').html('用户名：' + user);
+                $('.enrol').html('注销');
+                $(".loginBox").fadeOut("slow");
+            }
+        }
+
+    });
+
+    $(".close").click(function () {
+        $('.loginBox').fadeOut("slow");
+    });
+    //注销
+    $('.enrol').click(function () {
+        $('#userText').val("");
+        $('#passWordText').val("");
+        var tag = $('.enrol').html();
+        if (tag == '注销'){
+            var r=confirm("是否确定注销？")
+            if (r==true)
+            {
+                $('.login').html('登录');
+                $('.enrol').html('注册');
+            }
+            else
+            {
+            }
+        }
+    });
+
+
+
+
     //  ppt劲爆课程
     $(".tppt1").click(function(e){
          e.preventDefault();
@@ -24,6 +79,7 @@ $(function () {
          e.preventDefault();
         window.open("ppt-html/ppt-电动车窗宽屏.html");
     });
+
 
 // for(var a = 1; a <= 5; a++){
 //     var cla = "tppt" + a;
