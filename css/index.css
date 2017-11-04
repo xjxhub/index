@@ -7,6 +7,7 @@ ul li{
 }
 a {
     color: inherit;
+    cursor: pointer;
 }
 a:hover{
     color: #fff;
@@ -189,7 +190,7 @@ hr {
 /*导航*/
 .navbar{
     box-shadow:0 0 10px #000;
-    margin-bottom:-40px;
+    /*margin-bottom:-40px;*/
     padding:20px;
     box-sizing: border-box;
     height:100px;
@@ -272,8 +273,14 @@ hr {
     line-height:20px;
 }
 /*main*/
+
 #main{
+    width: 75%;
+    margin:0 auto;
     position: relative;
+}
+.all{
+    width:95%;
 }
 /*.bk{*/
     /*width:100%;*/
@@ -286,28 +293,37 @@ hr {
 
 /*}*/
 .banner{
-    width:1190px;
-    height:444px;
-    margin:80px auto;
+    /*width:1190px;*/
+    /*height:444px;*/
+    width: 100%;
+    /*margin:80px auto;*/
     position: relative;
-    margin-bottom:-30px;
+    display: -webkit-box;
+    /*-webkit-box-align: center;*/
+    /*margin-bottom:-30px;*/
+
 }
 .left-menu{
-    width:216px;
-    height:384px;
-    position: relative;
+    /*width:216px;
+    height:384px;*/
+    /*position: relative;*/
     z-index:2;
     padding:12px;
+    padding-left:0;
     box-sizing: border-box;
     background: #2b333b;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     font-weight:200;
+    /*-webkit-box-flex: 2;*/
+}
+.rightbox {
+    /*-webkit-box-flex: 3;*/
 }
 .item-a{
     width:107%;
-    height:80px;
-    line-height:80px;
+    /*height:80px;*/
+    /*line-height:80px;*/
     font-size:12px;
     cursor:pointer;
     padding-left:12px;
@@ -318,7 +334,7 @@ hr {
 }
 .hiddenbox{
     width:700px;
-    height:384px;
+    /*height:384px;*/
     background:#fff;
     padding-left:20px;
     position: absolute;
@@ -371,11 +387,11 @@ hr {
 }
 #carousel-example-generic{
     /*width:974px;*/
-    width:83%;
-    height:384px;
-    position: absolute;
-    top:0;
-    right:-11px;
+    /*width:83%;*/
+    /*height:384px;*/
+    /*position: absolute;*/
+    /*top:0;*/
+    /*right:-11px;*/
 }
 /*<!--middle-five-box    -->*/
 .container-fluid a{
@@ -393,28 +409,34 @@ hr {
     overflow: hidden;
 }
 .container-fluid{
-    width:1190px;
-    margin:0 auto;
+    /*width:1190px;*/
+    /*margin:0 auto;*/
+    margin-top: 40px;
     padding:0;
 }
 .container-fluid .row-1 h3{
     text-align: center;
     margin-left: -50px;
 }
+.row-1{
+    margin-top:10px;
+}
 .row-2{
     margin-left:-18px;
+    /*width:68%;*/
+    margin:0 auto;
 }
 .five-box{
-    width:229px;
-    height:200px;
+    /*width:229px;*/
+    /*height:200px;*/
     margin-top:5px;
     margin-left: 14px;
     padding:0;
 }
 .mf{
     border:1px solid #000;
-    width:217px;
-    height:121px;
+    /*width:217px;*/
+    /*height:121px;*/
     margin-left: 5px !important;
     margin-right: 30px;
     margin-bottom:40px;
@@ -430,7 +452,7 @@ hr {
     color:#e4393c;
 }
 .container{
-    width:1190px;
+    /*width:1190px;*/
     margin:0 auto;
     display: flex;
 }
