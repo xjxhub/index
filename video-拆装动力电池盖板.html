@@ -2,25 +2,19 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/nav.css">
-        <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/index-data.js"></script>
     <script src="js/index.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/index.js"></script>
 </head>
-<!--<script>
-$(function(){
-$(".login").click(function(){
-         alert('000');
-     })
-})
-</script>-->
-
 <body>
- <nav class="navbar navbar-default navbar-inverse" role="navigation">
+<header>
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
         <div class="navbar-header">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                 <span class="sr-only">Toggle Navigation</span>
@@ -43,16 +37,45 @@ $(".login").click(function(){
         </form>
 
         <ul class="nav navbar-nav navbar-right">
-            <!--<li><a href="#">下载APP</a></li>-->
-            <!--<li><a href="#">-->
+            <!--<li><a href="question.html">下载APP</a></li>-->
+            <!--<li><a href="question.html">-->
                 <!--<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>-->
                 <!--购物车-->
             <!--</a></li>-->
-            <li><a href="#" class="login">登录</a></li>
+            <li><a href="question.html">登录</a></li>
             <li><p>/</p></li>
-            <li><a href="#">注册</a></li>
+            <li><a href="question.html">注册</a></li>
         </ul>
         </div>
     </nav>
+</header>
+<div class="videobox">
+    <video id="video1" controls >
+        <source src="video/拆装动力电池盖板-11.2.mp4"/>
+    </video>
+    <div class="play">
+    <span class="glyphicon glyphicon glyphicon-play" aria-hidden="true"></span>
+    </div>
+</div>
+
+<script>
+   var p=document.querySelector(".play");
+    video1.onpause=function(){
+        p.style.display="block";
+    };
+    video1.onplay=function(){
+        p.style.display="none";
+    };
+  var vb=document.querySelector(".videobox");
+  vb.onclick=function(){
+      if(video1.paused){
+          video1.play();
+      }
+      else{
+          video1.pause()
+      }
+  }
+</script>
+
 </body>
 </html>

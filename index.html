@@ -12,87 +12,6 @@
     <script src="js/index.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <title></title>
-
-    <style type="text/css">
-        body{
-            position: relative;
-            opacity: 1;
-        }
-        *{
-            padding: 0px;
-            margin: 0px;
-        }
-        .loginBox{
-            width: 320px;
-            height: 250px;
-            background:#dddddd;
-            display: none;
-            position: absolute;
-            right: 50px;
-            top: 100px;
-            z-index: 100;
-        }
-        .close{
-            width: 20px;
-            height: 20px;
-            color: red;
-            background: url("imgs/close.png") no-repeat;
-            position: absolute;
-            right: 10px;
-            top: 10px;
-            opacity: 1;
-        }
-        .loginBox .userBox,.passWordBox{
-            margin: 30px 10px 10px 10px;
-            height: 40px;
-            /*background: pink;*/
-            line-height: 40px;
-            overflow: hidden;
-        }
-        .loginBox .passWordBox{
-            margin-top: 10px;
-        }
-        .loginBox .inline{
-            display: inline-block;
-            overflow: hidden;
-        }
-        .loginBox .user,.passWord{
-            width: 80px;
-            height: 30px;
-            line-height: 30px;
-            margin: 5px;
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-            /*background: lightgreen;*/
-            float: left;
-        }
-        .loginBox input{
-            height: 30px;
-            width: 200px;
-            /*background: lightseagreen;*/
-            float: left;
-            margin: 5px;
-            /*z-index: 100;*/
-        }
-        .loginBox .underLine{
-            border: 1px solid #666;
-            margin: 20px;
-
-        }
-        .loginBox .loginButton{
-            margin: 10px 30px 10px 30px;
-            height: 40px;
-            background: red;
-            color: white;
-            font-size: 16px;
-            line-height: 40px;
-            text-align: center;
-            border-radius: 5px;
-            z-index: 100;
-        }
-
-    </style>
 </head>
 <body>
 <!--导航-->
@@ -252,27 +171,10 @@
                 <!--<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>-->
                 <!--购物车-->
             <!--</a></li>-->
-
-            <li><a href="#" class="login">登录</a>
-                <p>/</p></li>
-            <li><a href="#" class="enrol">注册</a></li>
+            <li><a href="#">登录</a></li>
+            <li><p>/</p></li>
+            <li><a href="#">注册</a></li>
         </ul>
-        </div>
-
-        <div class="loginBox">
-            <div class="userBox">
-                <div class="close"></div>
-                <div class="inline user"><span>用户名：</span></div>
-                <div class="inline"><input id="userText" type="text" placeholder="请输入用户名" ></div>
-            </div>
-            <div class="passWordBox">
-                <div class="inline passWord" ><span>密  码：</span></div>
-                <div class="inline"><input id="passWordText" type="password" placeholder="请输入密码"></div>
-            </div>
-            <div class="underLine"></div>
-            <div class="loginButton">
-                确定登录
-            </div>
         </div>
     </nav>
 </header>
