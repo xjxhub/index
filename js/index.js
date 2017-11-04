@@ -32,6 +32,8 @@ $(function () {
 
     $(".close").click(function () {
         $('.loginBox').fadeOut("slow");
+        $('#userText').val("");
+        $('#passWordText').val("");
     });
     //注销
     $('.enrol').click(function () {

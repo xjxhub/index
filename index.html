@@ -11,6 +11,76 @@
     <script src="js/index-data.js"></script>
     <script src="js/index.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            position: relative;
+        }
+        .loginBox{
+            width: 260px;
+            height: 210px;
+            background: #eeeeee;
+            position: absolute;
+            top: 100px;
+            right: 80px;
+            border-radius: 5px;
+            z-index: 10;
+            display: none;
+        }
+        .loginBox .close{
+            width: 20px;
+            height: 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+            background: url("imgs/close.png") no-repeat;
+            opacity: 1;
+        }
+        .loginBox .userBox,.passWordBox{
+            margin: 10px;
+            height: 40px;
+            /*background: #999999;*/
+            overflow: hidden;
+        }
+        .loginBox .userBox{
+            margin-top: 40px;
+        }
+
+        .loginBox .line{
+            display: inline-block;
+            float: left;
+        }
+        .loginBox .user,.passWord{
+            width: 70px;
+            height: 30px;
+            margin: 5px;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: right;
+        }
+        .loginBox #userText,#passWordText{
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            margin: 5px 0px 5px 0px;
+            font-size: 10px;
+
+        }
+        .loginBox .loginButton{
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            margin: 20px 25px;
+            background: red;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+
     <title></title>
 </head>
 <body>
@@ -171,11 +241,26 @@
                 <!--<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>-->
                 <!--购物车-->
             <!--</a></li>-->
-            <li><a href="#">登录</a></li>
+            <li><a href="#" class="login">登录</a></li>
             <li><p>/</p></li>
-            <li><a href="#">注册</a></li>
+            <li><a href="#" class="enrol">注册</a></li>
         </ul>
         </div>
+
+        <div class="loginBox">
+            <div class="close"></div>
+            <div class="userBox">
+                <div class="line user"><span>用户名：</span></div>
+                <div class="line "><input id="userText" type="text" placeholder="请输入用户名" autofocus></div>
+            </div>
+            <div class="passWordBox">
+                <div class="line passWord"><span>密 码：</span></div>
+                <div class="line"><input id="passWordText" type="password" placeholder="请输入密码"></div>
+            </div>
+            <div class="loginButton">确定登录</div>
+        </div>
+
+
     </nav>
 </header>
 <!--main-->
